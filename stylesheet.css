@@ -1,0 +1,136 @@
+/* Remove this */
+div.temporaryFakeProject {
+    height: 20vw;
+    width: 70vw;
+
+    margin: 0vw 5vw;
+    padding: 0px;
+
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+
+    background-color: black;
+
+    color: white;
+}
+
+div.temporaryFakeProject > img {
+    float: right;
+    height: 20vw;
+    display: block;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 0px;
+}
+
+div {
+    padding: 1.5vh 0px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 10vw;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 5vw;
+    text-align: center;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 4vw;
+    text-align: left;
+
+    color: white;
+}
+
+div.topClass {
+    /*height: 50vh;*/
+}
+
+div.slash {
+    position: relative;
+}
+
+div.slash > div {
+    position: relative;
+    z-index: 1;
+}
+
+div.slash::before {
+    content: "";
+
+    background-color: #cccccc;
+
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewY(-4deg);
+    transform-origin: 50% 0;
+}
+
+div.squircle {
+    border-radius: 10px;
+}
+
+div.horizontalScrollContainer {
+    overflow-x: hidden;
+}
+
+div.projectScrollContainer > div {
+    width: 275vw;
+    margin-left: -70vw;
+
+    display: grid;
+    grid: 23vw / 80vw 80vw 80vw;
+
+    transition: margin-left 1s ease-in-out;
+}
+
+div.infiniteScrollContainer > div {
+    width: 255vw;
+
+    animation: slide infinite 20s linear;
+}
+
+div.infiniteScrollContainer > div > img {
+    width: 10vw;
+    height: 10vw;
+    margin: 1vw;
+
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -122vw;
+    }
+}
+
+/* FOR JAVASCRIPT */
+
+div.projectScrollContainer.slideTo0 > div {
+    margin-left: 10vw;
+}
+
+div.projectScrollContainer.slideTo1 > div {
+    margin-left: -70vw;
+}
+
+div.projectScrollContainer.slideTo2 > div {
+    margin-left: -150vw;
+}
