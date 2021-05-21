@@ -1,0 +1,40 @@
+/* Sane Defaults */
+* {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 0px;
+}
+
+div {
+    padding: 2vw 0px;
+}
+
+/* Unified text size */
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vw;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5vw;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4vw;
+    text-align: left;
+}
+
+a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2vw;
+    text-align: right;
+}
+
+p {
+    font-size: 1vw;
+    font-family: 'Roboto';
+}

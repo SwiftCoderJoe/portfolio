@@ -1,0 +1,75 @@
+footer {
+    margin-top: -3vw;
+
+    height: min-content;
+
+    padding-left: 50vw;
+    padding-right: 1vw;
+
+    display: grid;
+    grid: 4fr 2fr 1fr / 1fr;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+}
+
+footer > div > h2 {
+    text-align: right;
+}
+
+footer > div > a {
+    margin-left: 1vw;
+    margin-bottom: auto;
+
+    transition: 300ms;
+}
+
+footer > div > a:hover {
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+}
+
+footer > div > p {
+    grid-area: end;
+    text-align: right;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    background-color: white;
+    
+    vertical-align: baseline;
+
+    display: flex;
+}
+
+nav > div {
+    padding: 0;
+    flex-grow: 1;
+}
+
+nav > a {
+    margin-left: 2vw;
+    margin-right: 10px;
+
+    transition: 300ms;
+}
+
+nav > a:hover {
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+}
+
+nav > a.leftSide {
+    margin-left: 10px;
+}

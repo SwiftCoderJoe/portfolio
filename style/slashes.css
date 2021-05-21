@@ -1,0 +1,27 @@
+div.slash {
+    position: relative;
+}
+
+div.slash > div {
+    position: relative;
+    z-index: 1;
+}
+
+div.slash::before {
+    content: "";
+
+    background-color: #cccccc;
+
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewY(-6deg);
+    transform-origin: 50% 0;
+}
+
+div.squircle {
+    border-radius: 10px;
+}
