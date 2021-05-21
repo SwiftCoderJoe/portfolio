@@ -1,3 +1,67 @@
+* {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 0px;
+}
+
+div {
+    padding: 3vh 0px;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10vw;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5vw;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4vw;
+    text-align: left;
+}
+
+h4 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2vw;
+    text-align: right;
+}
+
+p {
+    font-size: 1vw;
+}
+div.slash {
+    position: relative;
+}
+
+div.slash > div {
+    position: relative;
+    z-index: 1;
+}
+
+div.slash::before {
+    content: "";
+
+    background-color: #cccccc;
+
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewY(-6deg);
+    transform-origin: 50% 0;
+}
+
+div.squircle {
+    border-radius: 10px;
+}
+
 div.project {
     height: 20vw;
     width: 70vw;
@@ -25,64 +89,29 @@ div.project > div {
     padding: 50px;
 }
 
+div.hardware {
+    padding: 1.5vw 9vw;
 
-* {
-    box-sizing: border-box;
-    border-collapse: collapse;
-    margin: 0px;
+    display: grid;
+    grid: 1fr /  1fr 1fr;
 }
 
-div {
-    padding: 1.5vh 0px;
+div.hardware > div {
+    padding: 0 1vw;
+    display: grid;
+    grid: "a b" 5vw
+          "c c" 1fr / 6vw 1fr;
 }
 
-h1 {
-    font-family: sans-serif;
-    font-size: 10vw;
+div.hardware > div > p {
+    grid-area: c;
 }
 
-h2 {
-    font-family: sans-serif;
-    font-size: 5vw;
-    text-align: center;
-}
-
-h3 {
-    font-family: sans-serif;
-    font-size: 4vw;
-    text-align: left;
-}
-
-div.topClass {
-    /*height: 50vh;*/
-}
-
-div.slash {
-    position: relative;
-}
-
-div.slash > div {
-    position: relative;
-    z-index: 1;
-}
-
-div.slash::before {
-    content: "";
-
-    background-color: #cccccc;
-
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: skewY(-4deg);
-    transform-origin: 50% 0;
-}
-
-div.squircle {
-    border-radius: 10px;
+div.hardware > div > img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 3.5vw;
 }
 
 div.horizontalScrollContainer {
@@ -111,6 +140,8 @@ div.infiniteScrollContainer > div > img {
     margin: 1vw;
 
     border-radius: 10px;
+
+    box-shadow: -10px 10px black;
 }
 
 @keyframes slide {
@@ -121,6 +152,58 @@ div.infiniteScrollContainer > div > img {
     100% {
         margin-left: -122vw;
     }
+}
+
+footer {
+    margin-top: -3vw;
+
+    height: fit-content;
+
+    padding-left: 50vw;
+    padding-right: 1vw;
+
+    display: grid;
+    grid: "title title title" 2fr 
+          "a b c" 1fr 
+          "end end end" 1fr / 1fr 1fr 1fr;
+}
+
+footer > h2 {
+    grid-area: title;
+    text-align: right;
+}
+
+footer > p {
+    grid-area: end;
+    text-align: right;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    background-color: white;
+    
+    vertical-align: baseline;
+
+    display: flex;
+}
+
+nav > div {
+    padding: 0;
+    flex-grow: 1;
+}
+
+nav > h4 {
+    margin-left: 2vw;
+    margin-right: 10px;
+
+    display: inline-block;
+}
+
+nav > h4.leftSide {
+    margin-left: 10px;
 }
 
 /* FOR JAVASCRIPT */
