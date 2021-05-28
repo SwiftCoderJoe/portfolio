@@ -1,0 +1,61 @@
+div.specialties {
+    padding: 1.5vw 9vw;
+
+    display: grid;
+    grid: "a b" 1fr 
+          "bottom bottom" 1fr / 1fr 1fr ;
+    gap: 2vw;
+}
+
+div.specialties > div.bottom {
+    grid-area: bottom;
+}
+
+div.specialties > div {
+    display: grid;
+    grid: "a b" 5vw
+          "end end" 1fr / 6vw 1fr;
+    
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: -15px 15px 0 #000;
+    
+}
+
+div.specialties > div > img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 3.5vw;
+}
+
+div.specialties > div > p {
+    grid-area: end;
+
+    padding: 0 1.5vw;
+}
+
+div.hardware {
+    padding: 1.5vw 9vw;
+
+    display: grid;
+    grid: 1fr /  1fr 1fr;
+}
+
+div.hardware > div {
+    padding: 0 1vw;
+    display: grid;
+    grid: "a b" 5vw
+          "c c" 1fr / 6vw 1fr;
+}
+
+div.hardware > div > p {
+    grid-area: c;
+}
+
+div.hardware > div > img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 3.5vw;
+}

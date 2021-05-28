@@ -1,18 +1,18 @@
-div.slash {
+.slash {
     position: relative;
 }
 
-div.slash > div {
+.slash > div {
     position: relative;
     z-index: 1;
 }
 
-div.slash::before {
+.slash::before {
     content: "";
 
     background-color: #cccccc;
 
-    display: inline-block;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;

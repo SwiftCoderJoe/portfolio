@@ -8,6 +8,8 @@ footer {
 
     display: grid;
     grid: 4fr 2fr 1fr / 1fr;
+
+    clip-path: inset( -100vw -100vw 0 -100vw );
 }
 
 footer > div {
@@ -39,6 +41,10 @@ footer > div > p {
     text-align: right;
 }
 
+footer.slash::before {
+    transform-origin: 100% 0;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -61,6 +67,9 @@ nav > a {
     margin-right: 10px;
 
     transition: 300ms;
+
+    text-decoration: none;
+    color: black;
 }
 
 nav > a:hover {
@@ -72,4 +81,15 @@ nav > a:hover {
 
 nav > a.leftSide {
     margin-left: 10px;
+}
+
+header {
+    padding: 1vw;
+}
+
+header > p {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 3vw;
+
+    margin-top: -1vw;
 }
