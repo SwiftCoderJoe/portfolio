@@ -25,3 +25,34 @@
 div.squircle {
     border-radius: 10px;
 }
+
+div.boxContainer {
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    gap: 5vw;
+
+    padding: 1.5vw 5vw;
+    padding-bottom: 4vw; /* This probably shouldn't exist, but smh */
+}
+
+div.box {
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: -15px 15px 0 #000;
+}
+
+div.box > h3 {
+    padding-left: 1vw;
+}
+
+div.box.gray {
+    background-color: #ddd;
+}
+
+div.spacer {
+    height: 1px;
+    margin: 1vw 10%;
+    padding: 0;
+
+    background-color: #555;
+}

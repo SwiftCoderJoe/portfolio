@@ -36,10 +36,10 @@ div.specialties > div > p {
 }
 
 div.hardware {
-    padding: 1.5vw 9vw;
+    padding: 0;
 
     display: grid;
-    grid: 1fr /  1fr 1fr;
+    grid: 1fr 1fr / 1fr;
 }
 
 div.hardware > div {
@@ -58,4 +58,17 @@ div.hardware > div > img {
     margin: auto;
     margin-bottom: 10px;
     height: 3.5vw;
+}
+
+div.otherSkills {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(4, 1fr);
+}
+
+div.otherSkills > div {
+    text-align: center;
+}
+
+div.otherSkills > div > img {
+    height: 7vw;
 }
