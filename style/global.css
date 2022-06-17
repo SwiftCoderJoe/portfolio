@@ -39,6 +39,10 @@ a {
     text-align: right;
 }
 
+a.smaller {
+    font-size: 1vw;
+}
+
 p {
     font-size: 1vw;
     font-family: 'Roboto';

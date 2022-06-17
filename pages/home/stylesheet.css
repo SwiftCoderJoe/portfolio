@@ -68,14 +68,47 @@ div.horizontalScrollContainer {
     overflow-x: hidden;
 }
 
-div.projectScrollContainer > div {
+div.projectScrollContainer {
+    position: relative;
+}
+
+div.projectScrollContainer > div:first-child {
     width: 275vw;
     margin-left: -70vw;
 
     display: grid;
-    grid: 23vw / 80vw 80vw 80vw;
+    grid: 20vw / 80vw 80vw 80vw;
 
     transition: margin-left 1s ease-in-out;
+}
+
+div.projectScrollContainer > div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1vw;
+    right: 1vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    pointer-events: none;
+}
+
+div.projectScrollContainer > div:nth-child(2) > a {   
+    pointer-events: auto;
+
+    background-color: #ccc;
+    width: 3vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
 }
 
 div.infiniteScrollContainer > div {
@@ -111,14 +144,14 @@ div.infiniteScrollContainer > div > img {
 
 /* FOR JAVASCRIPT */
 
-div.projectScrollContainer.slideTo0 > div {
+div.projectScrollContainer.slideTo0 > div:first-child {
     margin-left: 10vw;
 }
 
-div.projectScrollContainer.slideTo1 > div {
+div.projectScrollContainer.slideTo1 > div:first-child {
     margin-left: -70vw;
 }
 
-div.projectScrollContainer.slideTo2 > div {
+div.projectScrollContainer.slideTo2 > div:first-child {
     margin-left: -150vw;
 }
