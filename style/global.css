@@ -16,6 +16,11 @@ h1 {
     font-size: 10vw;
 }
 
+
+h1.smaller {
+    font-size: 5vw;
+}
+
 h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 5vw;
