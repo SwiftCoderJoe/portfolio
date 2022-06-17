@@ -2,8 +2,8 @@ div.specialties {
     padding: 1.5vw 9vw;
 
     display: grid;
-    grid: "a b" 1fr 
-          "bottom bottom" 1fr / 1fr 1fr ;
+    grid: "a b" min-content 
+          "bottom bottom" min-content / 1fr 1fr ;
     gap: 2vw;
 }
 
@@ -13,8 +13,11 @@ div.specialties > div.bottom {
 
 div.specialties > div {
     display: grid;
-    grid: "a b" 5vw
-          "end end" 1fr / 6vw 1fr;
+    grid: "a b" 3vw
+          "end end" 1fr / 3vw 1fr;
+
+    padding: 1.5vw;
+    gap: 1vw;
     
     border-radius: 15px;
     background-color: white;
@@ -25,14 +28,16 @@ div.specialties > div {
 div.specialties > div > img {
     display: block;
     margin: auto;
-    margin-bottom: 10px;
-    height: 3.5vw;
+    /* this is slightly larger than 3 because i think it looks nice deal with it */
+    height: 3.25vw;
+}
+
+div.specialties > div > h3 {
+    line-height: 0.75;
 }
 
 div.specialties > div > p {
     grid-area: end;
-
-    padding: 0 1.5vw;
 }
 
 div.hardware {
@@ -65,7 +70,7 @@ div.otherSkills {
     grid: repeat(2, 1fr) / repeat(4, 1fr);
 }
 
-div.otherSkills > div {
+div.otherSkills > div, div.otherSkills > div > p {
     text-align: center;
 }
 

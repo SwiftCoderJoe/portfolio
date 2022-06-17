@@ -1,7 +1,7 @@
 let currentSlide = 1
 
 let currentText = 0;
-let texts = ["iOS Developer", "Web Designer", "Frontend Engineer", "JavaScript Programmer", "Computer Technician", "Backend Engineer", "Web Developer", "SysAdmin", "Swift Programmer", "Content Creator"]
+let texts = ["iOS Developer", "Web Designer", "Frontend Engineer", "JavaScript Programmer", "Computer Technician", "Backend Engineer", "Web Developer", "SysAdmin", "Swift Programmer", "Content Creator", "Pretty Cool Guy"]
 
 function negativeModFix(n, m) {
     return ((n % m) + m) % m;

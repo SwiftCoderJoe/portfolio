@@ -6,7 +6,7 @@
 
         <!-- META -->
         <meta name="author" content="Joe Cardenas">
-        <meta name="description" content="SwiftCoderJoe Portfolio">
+        <meta name="description" content="Joe's Portfolio">
         <meta name="keywords" content="portfolio">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,18 +35,18 @@
         </nav>
         <header>
             <h1>Joe Cardenas</h1>
-            <h1 class="smaller">I'm your <switch id="mainSwitch">Swift Programmer</switch></h1>
+            <h1 class="smaller">I'm a <switch id="mainSwitch">Swift Programmer</switch></h1>
         </header>
         <div class="slash">
             <div>
-                <h2>Projects</h2>
+                <h2>Featured Projects</h2>
                 <div class="horizontalScrollContainer projectScrollContainer" id="projectCarousel">
                     <div>
                         <div class="squircle project" onclick="switchView(0)">
                             <div>
                                 <h3>Aer</h3>
                                 <p>Aer 1 is an advanced Discord bot that is used for moderation and other administration tasks. It can easily be configured and deployed. It currently runs in a number of servers and is available to self-host.</p>
-                                <div></div>
+                                <Spacer></Spacer>
                                 <hr>
                                 <p>Aer uses Node.js, Yarn, Discord.js, and PM2.</p>
                                 <a class="smaller" href="https://github.com/swiftcoderjoe/aer">Source Code</a>
@@ -57,7 +57,7 @@
                             <div>
                                 <h3>Memeinator</h3>
                                 <p>Memeinator is an iOS app that allows you to easily change regular text into meme text, currently available as a beta through TestFlight. It includes complex, layered text transformations and a keyboard extension. Memeinator is monetized with In-App-Purchases using StoreKit 2. Memeinator's source is robust and well-documented and will likely be made open-source after its full release.</p>
-                                <div></div>
+                                <Spacer></Spacer>
                                 <hr>
                                 <p>Memeinator uses Swift, SwiftUI, StoreKit, and KeyboardKit.</p>
                                 <a class="smaller" href="https://testflight.apple.com/join/saBqvfDA">Beta (Opens in TestFlight)</a>
@@ -68,7 +68,7 @@
                             <div>
                                 <h3>DiscordKit</h3>
                                 <p>DiscordKit is a proof of concept library for interacting with the Discord API. While DiscordKit's API coverage is extremely small and it is surely not ready for use in a production project, it is a robust foundation that could be easily extended to include far more of the API.</p>
-                                <div></div>
+                                <Spacer></Spacer>
                                 <hr>
                                 <p>DiscordKit uses Swift and Vapor.</p>
                                 <a href="https://github.com/swiftcoderjoe/DiscordKit" class="smaller">Source Code</a>
@@ -77,21 +77,22 @@
                         </div>
                     </div>
                     <div>
-                        <a onclick="switchView(negativeModFix(currentSlide - 1,3))"><svg viewBox="0 0 100 100" width="3vw" height="3vw">
+                        <button onclick="switchView(negativeModFix(currentSlide - 1,3))"><svg viewBox="0 0 100 100">
                             <polyline width="100%" height="100%" points="70,20 20,50 70,80" style="fill:none;stroke:black;stroke-width:5;" />
                         </svg></a>
-                        <a onclick="switchView(negativeModFix(currentSlide + 1,3))"><svg viewBox="0 0 100 100" width="3vw" height="3vw">
+                        <button onclick="switchView(negativeModFix(currentSlide + 1,3))"><svg viewBox="0 0 100 100">
                             <polyline width="100%" height="100%" points="30,20 80,50 30,80" style="fill:none;stroke:black;stroke-width:5;" />
                         </svg></a>
                     </div>
                 </div>
+                <a class="buttonLink" href="../skills/skills.html">See More</a>
             </div>
         </div>
         <div>
             <div>
                 <h2>Skills</h2>
                 <div class="horizontalScrollContainer infiniteScrollContainer">
-                    <div>
+                    <div class="nomono">
                         <div> <!-- EVIL CONTAINER DIV!!! -->
                             <h3>Swift</h3>
                             <h3>SwiftUI</h3>
@@ -118,22 +119,15 @@
                         </div>
                     </div>
                 </div>
+                <a class="gray buttonLink" href="../skills/skills.html">See More</a>
             </div>
         </div>
         <div class="slash">
             <div>
                 <h2>Who am I?</h2>
-                <div class="hardware">
-                    <div>
-                        <img src="../../img/tools.png">
-                        <h3>Repair</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia fugit, ex modi possimus aliquid voluptates eveniet, tempora ducimus velit, aut atque facilis ipsam voluptatum facere. Inventore illo mollitia ex.</p>
-                    </div>
-                    <div>
-                        <img src="../../img/rocket.png">
-                        <h3>Maintenence</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo amet quaerat sint sapiente dolore vero provident tenetur laudantium ab culpa magni fugit accusamus corrupti tempore, nostrum exercitationem, ipsum, quia architecto.</p>
-                    </div>
+                <div class="imageCaption">
+                    <p>Hi! I'm Joe. I mainly work in Swift, but I also know JavaScript and many other languages. I learn quickly and I'm always ready to try something new! I'd love to learn Rust and Golang in the future, and improve my backend skills. I'm always willing to work on group projects! Never hesitate to reach out.</p>
+                    <img src="../../img/avatar.jpg">
                 </div>
             </div>
         </div>
