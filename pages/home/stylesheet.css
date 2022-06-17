@@ -113,34 +113,80 @@ div.projectScrollContainer > div:nth-child(2) > a {
     cursor: pointer;
 }
 
-div.infiniteScrollContainer > div {
-    width: 240vw;
+div.infiniteScrollContainer {
+    overflow-x: visible;
 
+    /* height: 14vw; */
+}
+
+/* nested divs here is EVIL!!!!!! */
+/* This is because margin is calcualted as % of parent instead of self, so we need a parent with exactly the same size. bleh. */
+
+div.infiniteScrollContainer > div {
+    width: fit-content;
     position: relative;
-    display: flex;
+}
+
+div.infiniteScrollContainer > div > div:first-child {
+    display: grid;
+    grid: min-content / auto-flow;
+
+    width: fit-content;
+
+    padding: 0;
 
     animation: slide infinite 20s linear;
 }
 
-div.infiniteScrollContainer > div > img {
-    width: 10vw;
-    height: 10vw;
+div.infiniteScrollContainer > div > div > * {
+    background-color: #ccc;
+    vertical-align: middle;
+
+    padding: 1vw;
     margin: 1vw;
 
+    white-space: nowrap;
+
     border-radius: 10px;
-
     box-shadow: -10px 10px black;
+} 
 
-    display: block;
+div.infiniteScrollContainer > div > div:nth-child(2) {
+    position: absolute;
+
+    top: 2vw;
+    left: 0;
+    right: 0;
+    bottom: 2vw;
+
+    padding: 0;
+
+    display: grid;
+
+    grid: min-content / auto-flow;
+
+    width: fit-content;
+
+    animation: slideCover infinite 20s linear;
 }
 
 @keyframes slide {
     0% {
-        left: 0
+        margin-left: 0
     }
 
     100% {
-        left: -120vw;
+        margin-left: -100%;
+    }
+}
+
+@keyframes slideCover {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 0%;
     }
 }
 
