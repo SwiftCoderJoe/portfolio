@@ -56,3 +56,46 @@ div.spacer {
 
     background-color: #555;
 }
+
+/* Custom UI element styling*/
+
+a.buttonLink {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: #000;
+
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+
+    padding: 0.5vw;
+
+    background-color: #fff;
+
+    cursor: pointer;
+
+    transition: all 200ms;
+
+    border-radius: 10px;
+    box-shadow: -10px 10px black;
+}
+
+a.buttonLink.gray {
+    background-color: #ccc;
+}
+
+a.buttonLink:hover {
+    background-color: #eee;
+    box-shadow: -5px 5px black;
+}
+
+/* FOR REFERENCE:
+
+9vw horizontal padding for wide elements
+25vw for slimmer ones
+
+1.5vw vertical on most divs
+
+1.5vw padding for most things in boxes
+
+*/
