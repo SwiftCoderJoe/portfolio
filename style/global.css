@@ -49,12 +49,52 @@ p {
     text-align: left;
 }
 
-.noMono {
-    font-family: 'Roboto' !important;
+.vStack {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.gap-2 {
+    gap: 2em;
+}
+
+.p-0 {
+    padding: 0;
 }
 
 /* EVIL!! */
 
 Spacer {
     flex-grow: 1;
+}
+
+@media (max-width: 800px) {
+    div {
+        padding: 5vw 0px;
+    }
+
+    h1 {
+        font-size: 12vw;
+    }
+
+    h1.smaller {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
+
+    h3 {
+        font-size: 7vw;
+    }
+
+    a {
+        font-size: 5vw;
+    }
+
+    p, a.smaller {
+        font-size: 4vw;
+    }
 }

@@ -9,15 +9,15 @@ div.project {
     grid: 1fr / 1fr 20vw;
 
     background-color: #fff;
+    overflow: hidden;
 
     color: black;
-
     box-shadow: -15px 15px 0 #000;
 }
 
 switch {
     background-color: #000;
-    border-radius: 50px;
+    border-radius: 2vw;
     padding: 1.5vw;
     color: #fff;
 
@@ -79,7 +79,7 @@ div.projectScrollContainer > div:first-child {
     margin-left: -70vw;
 
     display: grid;
-    grid: 20vw / 80vw 80vw 80vw;
+    grid: min-content / 80vw 80vw 80vw;
 
     transition: margin-left 1s ease-in-out;
 }
@@ -203,4 +203,42 @@ div.projectScrollContainer.slideTo1 > div:first-child {
 
 div.projectScrollContainer.slideTo2 > div:first-child {
     margin-left: -150vw;
+}
+
+@media (max-width: 800px) {
+    div.project {
+        height: 60vh;
+        width: 70vw;
+
+        display: grid;
+        grid: 1fr 40vw / 1fr;
+
+        box-shadow: -10px 10px black;
+    }
+
+    div.project > img {
+        height: 40vw;
+        width: 70vw;
+    }
+
+    div.projectScrollContainer > div:nth-child(2) > button {   
+        width: 10vw;
+    }
+
+    div.infiniteScrollContainer > div > div:nth-child(2) {
+        top: 5vw;
+    }
+
+    div.infiniteScrollContainer > div > div > * {
+        box-shadow: -5px 5px black;
+    }
+
+    div.imageCaption {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    div.imageCaption > p {
+        box-shadow: -5px 5px 0 #000;
+    }
 }

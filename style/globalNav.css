@@ -22,10 +22,12 @@ footer > div > h2 {
     text-align: right;
 }
 
-footer > div > a {
+footer > div:nth-child(2) > * {
     margin-left: 1vw;
     margin-bottom: auto;
+}
 
+footer > div > a {
     text-decoration: none;
 
     color: black;
@@ -37,6 +39,12 @@ footer > div > a:hover {
     color: white;
 
     cursor: pointer;
+}
+
+footer > div:nth-child(3) {
+    align-items: baseline;
+
+    gap: 2em;
 }
 
 footer > div > p {

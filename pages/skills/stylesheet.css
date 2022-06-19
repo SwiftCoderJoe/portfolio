@@ -12,39 +12,10 @@ div.specialties > div.bottom {
 }
 
 div.specialties > div {
-    display: grid;
-    grid: "a b" 3vw
-          "end end" 1fr / 3vw 1fr;
-
-    padding: 1.5vw;
-    gap: 1vw;
-    
     border-radius: 15px;
     background-color: white;
     box-shadow: -15px 15px 0 #000;
     
-}
-
-div.specialties > div > img {
-    display: block;
-    margin: auto;
-    /* this is slightly larger than 3 because i think it looks nice deal with it */
-    height: 3.25vw;
-}
-
-div.specialties > div > h3 {
-    line-height: 0.75;
-}
-
-div.specialties > div > p {
-    grid-area: end;
-}
-
-div.hardware {
-    padding: 0;
-
-    display: grid;
-    grid: 1fr 1fr / 1fr;
 }
 
 div.hardware > div {

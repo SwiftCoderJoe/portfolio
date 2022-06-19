@@ -22,6 +22,34 @@
     transform-origin: 50% 0;
 }
 
+.noMono {
+    font-family: 'Roboto' !important;
+}
+
+.iconTitleText {
+    display: grid;
+    grid: "a b" 3vw
+          "end end" 1fr / 3vw 1fr;
+
+    padding: 0;
+    gap: 1vw;
+}
+
+.iconTitleText > img {
+    display: block;
+    margin: auto;
+    /* this is slightly larger than 3 because i think it looks nice deal with it */
+    height: 3.25vw;
+}
+
+.iconTitleText > h3 {
+    line-height: 0.75;
+}
+
+.iconTitleText > p {
+    grid-area: end;
+}
+
 div.squircle {
     border-radius: 10px;
 }
@@ -36,20 +64,18 @@ div.boxContainer {
 }
 
 div.box {
+    padding: 1.5vw;
+
     border-radius: 15px;
     background-color: white;
     box-shadow: -15px 15px 0 #000;
-}
-
-div.box > h3 {
-    padding-left: 1vw;
 }
 
 div.box.gray {
     background-color: #ddd;
 }
 
-div.spacer {
+div.divider {
     height: 1px;
     margin: 1vw 10%;
     padding: 0;
@@ -99,3 +125,9 @@ a.buttonLink:hover {
 1.5vw padding for most things in boxes
 
 */
+
+@media (max-width: 800px) {
+    a.buttonLink {
+        box-shadow: -5px 5px black;
+    }
+}
