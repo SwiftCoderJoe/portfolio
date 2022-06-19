@@ -130,4 +130,28 @@ a.buttonLink:hover {
     a.buttonLink {
         box-shadow: -5px 5px black;
     }
+
+    div.box {
+        padding: 3vw;
+    }
+
+    .iconTitleText {
+        grid: "a b" 6vw
+              "end end" 1fr / 6vw 1fr;
+    
+        gap: 1vw;
+    }
+
+    .iconTitleText > img {
+        display: block;
+        margin: auto;
+        /* this is slightly larger than 7 because i think it looks nice deal with it */
+        height: 6vw;
+    }
+
+    div.boxContainer {
+        grid: min-content min-content / 1fr;
+
+        padding: 5vw 9vw;
+    }
 }

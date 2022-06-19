@@ -104,3 +104,15 @@ header > p {
 
     margin-top: -1vw;
 }
+
+@media (max-width: 800px) {
+    footer {
+        grid: 2fr 1fr 1fr / 1fr;
+
+        padding-left: 0;
+    }
+
+    footer > div:nth-child(2) > * {
+        margin-left: 4vw;
+    }
+}

@@ -48,3 +48,24 @@ div.otherSkills > div, div.otherSkills > div > p {
 div.otherSkills > div > img {
     height: 7vw;
 }
+
+@media (max-width: 800px) {
+    div.specialties {
+        grid: "a" min-content 
+              "b" min-content 
+              "bottom" min-content / 1fr;
+        gap: 5vw;
+
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    div.otherSkills {
+        display: grid;
+        grid: repeat(4, 1fr) / repeat(2, 1fr);
+    }
+
+    div.otherSkills > div > img {
+        height: 20vw;
+    }
+}
