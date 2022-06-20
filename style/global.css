@@ -54,13 +54,46 @@ p {
     flex-direction: column;
 }
 
+.flex-1 {
+    flex: 1;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
 
 .gap-2 {
-    gap: 2em;
+    gap: 2vw;
 }
 
 .p-0 {
     padding: 0;
+}
+
+.xp-15 {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.hStack {
+    display: flex;
+    flex-direction: row;
+}
+
+.height-25 {
+    height: 25vw;
+}
+
+.square {
+    aspect-ratio: 1/1;
+}
+
+.circle {
+    border-radius: 50%;
 }
 
 /* EVIL!! */
@@ -96,5 +129,29 @@ Spacer {
 
     p, a.smaller {
         font-size: 4vw;
+    }
+
+    .mobile-vStack {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-xp-9 {
+        padding-left: 9vw;
+        padding-right: 9vw;
+    }
+
+    .mobile-height-40 {
+        height: 40vw;
+    }
+
+    .mobile-height-4 {
+        height: 4vw;
+    }
+}
+
+@media (min-width: 801px) {
+    .desktop-p-0 {
+        padding: 0;
     }
 }

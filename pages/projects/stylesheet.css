@@ -1,0 +1,55 @@
+div.titleImageCaption {
+    display: flex;
+    gap: 2vw;
+
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+div.titleImageCaption > div {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.titleImageCaption > div > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 1.5vw;
+
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: -15px 15px 0 #000;
+}
+
+div.titleImageCaption > img {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+    div.titleImageCaption {
+        padding-left: 9vw;
+        padding-right: 9vw;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.titleImageCaption > img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    div.titleImageCaption > div > div {
+        padding: 3vw;
+    }
+
+    div.titleImageCaption spacer {
+        height: 4vw;
+    }
+}
