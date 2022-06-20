@@ -3,6 +3,8 @@ footer {
 
     height: min-content;
 
+    overflow: hidden;
+
     padding-left: 50vw;
     padding-right: 1vw;
 
