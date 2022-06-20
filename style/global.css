@@ -141,12 +141,12 @@ Spacer {
         padding-right: 9vw;
     }
 
-    .mobile-height-40 {
-        height: 40vw;
-    }
-
     .mobile-height-4 {
         height: 4vw;
+    }
+
+    .mobile-height-50 {
+        height: 50vw;
     }
 }
 

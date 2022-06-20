@@ -50,8 +50,8 @@
     grid-area: end;
 }
 
-div.squircle {
-    border-radius: 10px;
+.squircle {
+    border-radius: 15px;
 }
 
 div.boxContainer {
