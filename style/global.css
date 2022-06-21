@@ -49,6 +49,11 @@ p {
     text-align: left;
 }
 
+img {
+    object-fit: cover;
+    object-position: top;
+}
+
 .vStack {
     display: flex;
     flex-direction: column;
@@ -128,7 +133,7 @@ Spacer {
     }
 
     p, a.smaller {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     .mobile-vStack {
