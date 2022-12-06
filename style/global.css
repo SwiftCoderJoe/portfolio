@@ -40,11 +40,11 @@ a {
 }
 
 a.smaller {
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 p {
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-family: 'Roboto';
     text-align: left;
 }
@@ -133,7 +133,7 @@ Spacer {
     }
 
     p, a.smaller {
-        font-size: 3.5vw;
+        font-size: 3.75vw;
     }
 
     .mobile-vStack {
