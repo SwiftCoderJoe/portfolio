@@ -1,0 +1,9 @@
+# Average Caddy configuration moment
+# We really don't need anything more advanced than this. 
+
+# WARNING:
+# It's worth noting that this does NOT actually create any SSL/TLS service, and only operates over HTTP.
+# In its actual deployment, HTTPS is controlled by the reverse proxy.
+
+:80
+file_server
