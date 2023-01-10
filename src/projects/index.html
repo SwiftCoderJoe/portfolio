@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="stylesheet.css">
 
         <!-- SCRIPTS -->
-        <script src="carousel.js"></script>
+        <script src="openDialog.js"></script>
     </head>
 
     <body>
@@ -86,45 +86,82 @@
                 <img src="../img/DiscordKit.png" alt="" class="height-25 mobile-height-50 square squircle">
             </div>
         </div>
-
+        
         <div>
-            <div class="hStack align-center mobile-vStack xp-15 mobile-xp-9 gap-2">
-                <div class="vStack flex-1 desktop-p-0 align-self-stretch"> <!-- This is desktop-p-0 because the title is >1 line -->
-                    <h2>Memeinator Homepage</h2>
-                    <div class="box gray vStack flex-1">
-                        <p>The Memeinator Homepage is a simple yet beautiful website built using SolidJS. After my experience with SwiftUI and declarative UI, SolidJS came very naturally to me and I find it much more convinient to use than just basic HTML/CSS. It is hosted on my Homelab.</p>
-                        <Spacer class="mobile-height-4"></Spacer>
-                        <hr>
-                        <p>The Memeinator Landing Page uses HTML, CSS, and SolidJS.</p>
-                        <div class="p-0 gap-2 hStack">
-                            <a class="smaller" href="https://github.com/swiftcoderjoe/memeinator-homepage">Source Code</a>
-                            <a class="smaller" href="https://memeinator.joecardenas.dev">Live Site</a>
-                        </div>
+            <div class="vStack flex-1 align-self-stretch">
+                <h2>More Projects</h2>
+                <div class="grid-2-wide mobile-vStack gap-2 xp-15">
+                    <div class="box gray vStack flex-1 divLink" onclick="openModal('portfolioDialog')">
+                        <h3>Portfolio</h3>
+                        <p class="truncated-1">This website is just as much a place to show off my projects as it is a showcase of my design and development skills. It's built with basic HTML and CSS, although it would be nice to someday rewrite it in a library like SolidJS. It's hosted on my homelab, and it's a great place to find lots of different information about me.</p>
+                    </div>
+                    <div class="box gray vStack flex-1 divLink" onclick="openModal('memeinatorHomepageDialog')">
+                        <h3>Memeinator Site</h3>
+                        <p class="truncated-1">The Memeinator landing page is a simple yet beautiful website built using SolidJS. After my experience with SwiftUI and declarative UI, SolidJS came very naturally to me and I find it much more convinient to use than just basic HTML/CSS. It is hosted on my Homelab.</p>
+                    </div>
+                    <div class="box gray vStack flex-1 divLink" onclick="openModal('reggiebotDialog')">
+                        <h3>Reggiebot</h3>
+                        <p class="truncated-1">Reggiebot is a small Discord Bot intended to send pictures as replies to messages. I intended to help build my skills in the Rust programming language by creating a small, superficial project in the Rust ecosystem. Through this bot, I've learned the basics of Rust and I've learned about automatic deployment techniques using Docker. It's named after a close friend of mine.</p>
                     </div>
                 </div>
-                <img src="../img/memeinator-homepage.png" alt="" class="height-25 mobile-height-50 square squircle">
             </div>
         </div>
 
-        <div class="slash">
-            <div class="hStack align-center mobile-vStack xp-15 mobile-xp-9 gap-2">
-                <div class="vStack flex-1 align-self-stretch">
-                    <h2>Portfolio</h2>
-                    <div class="box vStack flex-1">
-                        <p>This website is just as much a place to show off my projects as it is a showcase of my design and development skills. It's built with basic HTML and CSS, although it would be nice to someday rewrite it in a library like SolidJS. It's hosted on my homelab, and it's a great place to find lots of different information about me.</p>
-                        <Spacer class="mobile-height-4"></Spacer>
-                        <hr>
-                        <p>My Portfolio uses HTML5, CSS3, and JavaScript.</p>
-                        <div class="p-0 gap-2 hStack">
-                            <a class="smaller" href="https://github.com/swiftcoderjoe/portfolio">Source Code</a>
-                            <a class="smaller" href="https://joecardenas.dev">Live Site</a>
-                        </div>                    </div>
+        <dialog id="portfolioDialog">
+            <div class="vStack flex-1 p-0">
+                <div class="hStack p-0">
+                    <h3>Portfolio</h3>
+                    <Spacer></Spacer>
+                    <h3 class="gray small divLink centerfix" onclick="closeModal('portfolioDialog')">✖</h3>
                 </div>
-                <img src="../img/Portfolio.png" alt="" class="height-25 mobile-height-50 square squircle">
+                <p>This website is just as much a place to show off my projects as it is a showcase of my design and development skills. It's built with basic HTML and CSS, although it would be nice to someday rewrite it in a library like SolidJS. It's hosted on my homelab, and it's a great place to find lots of different information about me.</p>
+                <Spacer class="mobile-height-4"></Spacer>
+                <hr>
+                <p>My Portfolio uses HTML5, CSS3, and JavaScript.</p>
+                <div class="p-0 gap-2 hStack">
+                    <a class="smaller" href="https://github.com/swiftcoderjoe/portfolio">Source Code</a>
+                    <a class="smaller" href="https://joecardenas.dev">Live Site</a>
+                </div>
             </div>
-        </div>
+        </dialog>
 
-        <footer>
+        <dialog id="memeinatorHomepageDialog">
+            <div class="vStack flex-1 p-0">
+                <div class="hStack p-0">
+                    <h3>Memeinator Site</h3>
+                    <Spacer></Spacer>
+                    <h3 class="gray small divLink centerfix" onclick="closeModal('memeinatorHomepageDialog')">✖</h3>
+                </div>
+                <p>The Memeinator landing page is a simple yet beautiful website built using SolidJS. After my experience with SwiftUI and declarative UI, SolidJS came very naturally to me and I find it much more convinient to use than just basic HTML/CSS. It is hosted on my Homelab.</p>
+                <Spacer class="mobile-height-4"></Spacer>
+                <hr>
+                <p>HTML CSS SolidJS</p>
+                <div class="p-0 gap-2 hStack">
+                    <a class="smaller" href="https://github.com/swiftcoderjoe/memeinator-homepage">Source Code</a>
+                    <a class="smaller" href="https://memeinator.joecardenas.dev">Live Site</a>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="reggiebotDialog">
+            <div class="vStack flex-1 p-0">
+                <div class="hStack p-0">
+                    <h3>Reggiebot</h3>
+                    <Spacer></Spacer>
+                    <h3 class="gray small divLink centerfix" onclick="closeModal('reggiebotDialog')">✖</h3>
+                </div>
+                <p>Reggiebot is a small Discord Bot intended to send pictures as replies to messages. I intended to help build my skills in the Rust programming language by creating a small, superficial project in the Rust ecosystem. Through this bot, I've learned the basics of Rust and I've learned about automatic deployment techniques using Docker. It's named after a close friend of mine.</p>
+                <Spacer class="mobile-height-4"></Spacer>
+                <hr>
+                <p>Reggiebot uses Rust, Serenity, and Docker.</p>
+                <div class="p-0 gap-2 hStack">
+                    <a class="smaller" href="https://github.com/swiftcoderjoe/portfolio">Source Code</a>
+                    <a class="smaller" href="https://joecardenas.dev">Live Site</a>
+                </div>
+            </div>
+        </dialog>
+
+        <footer class="slash">
             <div>
                 <h2>JC</h2>
             </div>

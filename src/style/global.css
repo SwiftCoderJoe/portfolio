@@ -5,6 +5,20 @@
     margin: 0px;
 }
 
+/* Dialogs should always be centered, because why aren't they? */
+dialog {
+    right: 10vw;
+    left: 10vw;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background: black;
+    opacity: 0.7;
+}
+
 div {
     padding: 2vw 0px;
 }
@@ -29,7 +43,7 @@ h2 {
 
 h3 {
     font-family: 'Roboto Mono', monospace;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: left;
 }
 
@@ -52,6 +66,11 @@ p {
 img {
     object-fit: cover;
     object-position: top;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .vStack {
@@ -89,6 +108,11 @@ img {
     flex-direction: row;
 }
 
+.grid-2-wide {
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+}
+
 .height-25 {
     height: 25vw;
 }
@@ -99,6 +123,14 @@ img {
 
 .circle {
     border-radius: 50%;
+}
+
+.truncated-1 {
+    height: 1.25em;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* EVIL!! */
@@ -125,7 +157,7 @@ Spacer {
     }
 
     h3 {
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     a {

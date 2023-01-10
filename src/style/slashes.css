@@ -74,6 +74,9 @@ div.box {
     border-radius: 15px;
     background-color: white;
     box-shadow: -15px 15px 0 #000;
+
+    /* This is set because of the line truncation in Projects/More Projects */
+    overflow: hidden;
 }
 
 div.box.gray {
@@ -120,6 +123,41 @@ a.buttonLink:hover {
     box-shadow: -5px 5px black;
 }
 
+.divLink {
+    cursor: pointer;
+
+    transition: all 200ms;
+
+    border-radius: 10px;
+    box-shadow: -10px 10px black;
+}
+
+.divLink.gray {
+    background-color: #ccc;
+}
+
+.small.divLink {
+    border-radius: 15px;
+    box-shadow: -5px 5px black;
+}
+
+.divLink:hover {
+    background-color: #eee;
+    box-shadow: -5px 5px black;
+}
+
+.small.divLink:hover {
+    box-shadow: -3px 3px black;
+}
+
+.divLink.centerfix {
+    text-align: center;
+    line-height: 1em;
+    height: calc(1em + 10px);
+    width: calc(1em + 10px);
+    padding: 5px;
+}
+
 /* FOR REFERENCE:
 
 9vw horizontal padding for wide elements
@@ -159,4 +197,20 @@ a.buttonLink:hover {
 
         padding: 5vw 9vw;
     }
+
+    .divLink.centerfix {
+        line-height: 1em;
+        height: calc(1em + 4px);
+        width: calc(1em + 4px);
+        padding: 2px;
+    }
+
+    .small.divLink {
+        box-shadow: -3px 3px black;
+    }
+
+    .small.divLink:hover {
+        box-shadow: -1px 1px black;
+    }
+    
 }
