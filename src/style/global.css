@@ -133,6 +133,10 @@ hr {
     text-overflow: ellipsis;
 }
 
+.disabled {
+    cursor: not-allowed;
+}
+
 /* EVIL!! */
 
 Spacer {

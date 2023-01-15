@@ -1,5 +1,6 @@
 div.project {
-    height: 20vw;
+    /* Note that this is only 23 because of The Dumptruck. Set it back to 20 if The Dumptruck ever leaves featured. */
+    height: 23vw;
     width: 70vw;
 
     margin: 0vw 5vw;
@@ -30,7 +31,7 @@ switch.invisible {
 
 div.project > img {
     border-radius: 10px;
-    height: 20vw;
+    height: 23vw;
     display: block;
 }
 
