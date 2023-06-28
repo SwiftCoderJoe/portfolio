@@ -5,5 +5,7 @@
 # It's worth noting that this does NOT actually create any SSL/TLS service, and only operates over HTTP.
 # In its actual deployment, HTTPS is controlled by the reverse proxy.
 
-:80
-file_server
+:80 {
+    file_server
+    header Cache-Control: max-age=604800
+}
