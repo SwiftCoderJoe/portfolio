@@ -5,7 +5,23 @@ FROM caddy:2-alpine
 # Let's add our caddyfile. Since this should change less than the website data, it's added first.
 COPY Caddyfile /etc/caddy/Caddyfile
 
+# Next, we're going to build our site, using QDsrcset as a convenience.
+FROM node:20-alpine AS build
+
+# Install deps
+WORKDIR /usr/src
+
+COPY package.json ./
+COPY package-lock.json ./
+
+RUN npm i
+
+# Now let's copy in the site and build it.
+# This also copies a few unneccessary things like the README and Caddyfile, but that's not a huge issue.
+COPY . . 
+RUN npm run build
+
 # Last, we add the site into the srv directory.
-COPY src /srv
+COPY --from build /usr/src/dist /srv
 
 # We're done!
