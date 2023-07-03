@@ -3,6 +3,6 @@
     "build": "qdsrcset"
   },
   "dependencies": {
-    "qdsrcset": "^1.0.5"
+    "qdsrcset": "^1.1.0"
   }
 }
