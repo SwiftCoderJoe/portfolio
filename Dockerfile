@@ -22,6 +22,6 @@ COPY . .
 RUN npm run build
 
 # Last, we add the site into the srv directory.
-COPY --from build /usr/src/dist /srv
+COPY --from=build /usr/src/dist /srv
 
 # We're done!
