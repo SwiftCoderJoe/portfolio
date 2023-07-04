@@ -2,7 +2,7 @@
   "scripts": {
     "build": "qdsrcset"
   },
-  "dependencies": {
+  "devDependencies": {
     "qdsrcset": "^1.1.0"
   }
 }
