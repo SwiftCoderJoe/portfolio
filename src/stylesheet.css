@@ -208,7 +208,7 @@ div.projectScrollContainer.slideTo2 > div:first-child {
 
 @media (max-width: 800px) {
     div.project {
-        height: 60vh;
+        height: 100%;
         width: 70vw;
 
         display: grid;
