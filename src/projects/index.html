@@ -82,23 +82,30 @@
         <div class="slash">
             <div class="hStack align-center mobile-vStack xp-15 mobile-xp-9 gap-2">
                 <div class="vStack flex-1 align-self-stretch">
-                    <h2>Aer</h2>
+                    <h2>8-Bit Breadboard CPU</h2>
                     <div class="box vStack flex-1">
-                        <p>Aer 1 is an advanced Discord bot that is used for moderation and other administration tasks. It can easily be configured and deployed. It currently runs in a number of servers and is available to self-host.</p>
+                        <p>Built over the span of about 2 years, this 8-Bit breadboard CPU is based on <a class="smaller noMono" href="https://www.youtube.com/@BenEater">Ben Eater</a>'s design and tutorials. This project has given me a deeper understanding of computer architectures and how they work on an extremely low level. Though it isn't very powerful, it is a great low-level representation of real computer architecture and microcode.</p>
                         <Spacer class="mobile-height-4"></Spacer>
                         <hr>
-                        <p>Aer uses Node.js, Yarn, Discord.js, and PM2.</p>
-                        <a class="smaller" href="https://github.com/swiftcoderjoe/aer">Source Code</a>
+                        <p>This CPU uses TI 74LS-Series ICs</p>
+                        <div class="hStack p-0 gap-2">
+                            <a class="smaller" href="https://www.youtube.com/watch?v=fdlXsQOeBtY">CPU in Action</a>
+                            <a class="smaller" href="https://www.youtube.com/@BenEater">Ben Eater</a>
+                        </div>
                     </div>
                 </div>
-                <img src="../img/aer.png" alt="" class="height-25 mobile-height-50 square squircle">
-            </div>
+                <img src="../img/8bitcpu.jpg" alt="The 8-Bit CPU" class="height-25 mobile-height-50 square squircle">
+            </div>  
         </div>
         
         <div>
             <div class="vStack flex-1 align-self-stretch">
                 <h2>More Projects</h2>
                 <div class="grid-2-wide mobile-vStack gap-2 xp-15">
+                    <div class="box gray vStack flex-1 divLink" onclick="openModal('aer')">
+                        <h3>Aer</h3>
+                        <p class="truncated-1">Aer 1 is an advanced Discord bot that is used for moderation and other administration tasks. It can easily be configured and deployed. It currently runs in a number of servers and is available to self-host.</p>
+                    </div>
                     <div class="box gray vStack flex-1 divLink" onclick="openModal('portfolioDialog')">
                         <h3>Portfolio</h3>
                         <p class="truncated-1">This website is just as much a place to show off my projects as it is a showcase of my design and development skills. It's built with basic HTML and CSS, although it would be nice to someday rewrite it in a library like SolidJS. It's hosted on my homelab, and it's a great place to find lots of different information about me.</p>
@@ -209,6 +216,24 @@
                     <a href="https://github.com/swiftcoderjoe/DiscordKit" class="smaller">Source Code</a>
                 </div>
                 <img src="../img/DiscordKit.png" alt="" class="height-25 mobile-height-50 square squircle">
+            </div>
+        </dialog>
+
+        <dialog id="aer">
+            <div class="hStack mobile-vStack gap-2">
+                <div class="vStack flex-1 p-0">
+                    <div class="hStack p-0">
+                        <h3>Aer</h3>
+                        <Spacer></Spacer>
+                        <h3 class="gray small divLink centerfix" onclick="closeModal('aer')">✖</h3>
+                    </div>
+                    <p>Aer 1 is an advanced Discord bot that is used for moderation and other administration tasks. It can easily be configured and deployed. It currently runs in a number of servers and is available to self-host.</p>
+                    <Spacer class="mobile-height-4"></Spacer>
+                    <hr>
+                    <p>Aer uses Node.js, Yarn, Discord.js, and PM2.</p>
+                    <a class="smaller" href="https://github.com/swiftcoderjoe/aer">Source Code</a>
+                </div>
+                <img src="../img/aer.png" alt="" class="height-25 mobile-height-50 square squircle">
             </div>
         </dialog>
     </body>
