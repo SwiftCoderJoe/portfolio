@@ -122,6 +122,10 @@
                         <h3>DiscordKit</h3>
                         <p class="truncated-1">DiscordKit is a proof of concept library for interacting with the Discord API. While DiscordKit's API coverage is extremely small and it is surely not ready for use in a production project, it is a robust foundation that could be easily extended to include far more of the API.</p>
                     </div>
+                    <div class="box gray vStack flex-1 divLink" onclick="openModal('homelab')">
+                        <h3>Helium (HomeLab)</h3>
+                        <p class="truncated-1">Helium is my home server, my playground for learning server-side technologies and selfhosting. It currently hosts all of my websites, a Nextcloud instance, a VPN, a mailserver, a Minecraft server, a Jellyfin media server, and more. Each service is behind a reverse proxy and every service is completely Dockerized.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -233,6 +237,22 @@
                     <a class="smaller" href="https://github.com/swiftcoderjoe/aer">Source Code</a>
                 </div>
                 <img src="../img/aer.png" alt="" class="height-25 mobile-height-50 square squircle">
+            </div>
+        </dialog>
+
+        <dialog id="homelab">
+            <div class="hStack mobile-vStack gap-2">
+                <div class="vStack flex-1 p-0">
+                    <div class="hStack p-0">
+                        <h3>Helium</h3>
+                        <Spacer></Spacer>
+                        <h3 class="gray small divLink centerfix" onclick="closeModal('homelab')">✖</h3>
+                    </div>
+                    <p>Helium is my home server, my playground for learning server-side technologies and selfhosting. It currently hosts all of my websites, a Nextcloud instance, a VPN, a mailserver, a Minecraft server, a Jellyfin media server, and more. Each service is behind a reverse proxy and every service is completely Dockerized, running on Rocky Linux.</p>
+                    <Spacer class="mobile-height-4"></Spacer>
+                    <hr>
+                    <p>My Homelab uses Docker and Rocky Linux.</p>
+                </div>
             </div>
         </dialog>
     </body>
