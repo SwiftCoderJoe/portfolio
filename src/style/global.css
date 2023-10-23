@@ -73,6 +73,10 @@ hr {
     margin-bottom: 10px;
 }
 
+img.contain {
+    object-fit: contain;
+}
+
 .vStack {
     display: flex;
     flex-direction: column;
