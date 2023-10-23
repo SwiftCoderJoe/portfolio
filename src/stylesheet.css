@@ -33,6 +33,7 @@ div.project > img {
     border-radius: 10px;
     height: 23vw;
     display: block;
+    margin: auto;
 }
 
 div.project > div {
