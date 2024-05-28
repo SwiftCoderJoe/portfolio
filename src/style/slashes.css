@@ -150,14 +150,6 @@ a.buttonLink:hover {
     box-shadow: -3px 3px black;
 }
 
-.divLink.centerfix {
-    text-align: center;
-    line-height: 1em;
-    height: calc(1em + 10px);
-    width: calc(1em + 10px);
-    padding: 5px;
-}
-
 /* FOR REFERENCE:
 
 9vw horizontal padding for wide elements
@@ -196,13 +188,6 @@ a.buttonLink:hover {
         grid: min-content min-content / 1fr;
 
         padding: 5vw 9vw;
-    }
-
-    .divLink.centerfix {
-        line-height: 1em;
-        height: calc(1em + 4px);
-        width: calc(1em + 4px);
-        padding: 2px;
     }
 
     .small.divLink {
