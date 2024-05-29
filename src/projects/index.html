@@ -49,7 +49,7 @@
                 <div class="vStack flex-1 align-self-stretch">
                     <h2>StatShot</h2>
                     <div class="box vStack flex-1">
-                        <p>StatShot is a golf analytics iOS app built collaboratively with my Hopkins golf team Co-Captain Ryan Coffey. StatShot allows golfers to quickly and easily input round data, and then proceed to analyze their rounds using an innovative new technique called Strokes Gained. Strokes Gained allows golfers to see exactly which part of their game needs the most practice. We released the first public version of StatShot just two months after it's inception.</p>
+                        <p>StatShot is a golf analytics iOS app built collaboratively with my Hopkins golf team Co-Captain Ryan Coffey. StatShot allows golfers to quickly and easily input round data, and then proceed to analyze their rounds using an innovative new technique called Strokes Gained. Strokes Gained allows golfers to see exactly which part of their game needs the most practice. We released the first public version of StatShot just two months after its inception.</p>
                         <Spacer class="mobile-height-4"></Spacer>
                         <hr>
                         <p>StatShot uses SwiftUI and SwiftData</p>
@@ -63,16 +63,16 @@
         <div>
             <div class="hStack align-center mobile-vStack xp-15 mobile-xp-9 gap-2">
                 <div class="vStack flex-1 align-self-stretch">
-                    <h2>The Dumptruck</h2>
+                    <h2>6502 Breadboard Computer</h2>
                     <div class="box gray vStack flex-1">
-                        <p>The Dumptruck is hydroponics automation and testing robot built collaboratively with Davis Bachner. Davis worked on most of the hardware, and I wrote the software. The Dumptruck can support three plants, each with different nutrient schedules, useful for A/B testing. The Dumptruck includes a web interface, scheduler, motor driver, and a pH sensor all running on a Raspberry Pi and an Arduino. The Dumptruck has an advanced, modular and extensible project architecture. The Dumptruck's source code is open-source.</p>
+                        <p>This 6502-based computer is based on <a class="smaller noMono" href="https://www.youtube.com/@BenEater">Ben Eater</a>'s design. Because it sits right between the low-level hardware I built in my 8-bit CPU project and the high-level software I generally deal with, this project was simultaneously capable enough to teach me real assembly programming and yet simple enough for a beginner to understand. I extended Ben Eater's design with a PS/2 keyboard interface and a simple text editing program.</p>
                         <Spacer class="mobile-height-4"></Spacer>
                         <hr>
-                        <p>The Dumptruck uses HTML/CSS/JS, Express.js, Python, Raspberry Pi, Arduino, Redis, and more.</p>
+                        <p>This computer uses WDC 65C-Series ICs and 6502 Assembly</p>
                         <a class="smaller" href="https://github.com/swiftcoderjoe/dumptruck">Source Code</a>
                     </div>
                 </div>
-                <img src="../img/dumptruck.JPG" alt="" class="height-25 mobile-height-50 square squircle">
+                <img src="../img/6502computer.png" alt="" class="height-25 mobile-height-50 square squircle">
             </div>
         </div>
 
@@ -142,30 +142,13 @@
                         <h3>Helium (HomeLab)</h3>
                         <p class="truncated-1">Helium is my home server, my playground for learning server-side technologies and selfhosting. It currently hosts all of my websites, a Nextcloud instance, a VPN, a mailserver, a Minecraft server, a Jellyfin media server, and more. Each service is behind a reverse proxy and every service is completely Dockerized.</p>
                     </div>
+                    <div class="box vStack flex-1 divLink" onclick="openModal('dumptruck')">
+                        <h3>The Dumptruck</h3>
+                        <p class="truncated-1">The Dumptruck is hydroponics automation and testing robot built collaboratively with Davis Bachner. Davis worked on most of the hardware, and I wrote the software. The Dumptruck can support three plants, each with different nutrient schedules, useful for A/B testing. The Dumptruck includes a web interface, scheduler, motor driver, and a pH sensor all running on a Raspberry Pi and an Arduino. The Dumptruck has an advanced, modular and extensible project architecture. The Dumptruck's source code is open-source.</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <dialog id="portfolioDialog">
-            <div class="hStack mobile-vStack gap-2">
-                <div class="vStack flex-1 p-0">
-                    <div class="hStack p-0">
-                        <h3>Portfolio</h3>
-                        <Spacer></Spacer>
-                        <h3 class="gray small divLink centerfix" onclick="closeModal('portfolioDialog')">✖</h3>
-                    </div>
-                    <p>This website is just as much a place to show off my projects as it is a showcase of my design and development skills. It's built with basic HTML and CSS, although it would be nice to someday rewrite it in a library like SolidJS. It's hosted on my homelab, and it's a great place to find lots of different information about me.</p>
-                    <Spacer class="mobile-height-4"></Spacer>
-                    <hr>
-                    <p>My Portfolio uses HTML5, CSS3, and JavaScript.</p>
-                    <div class="p-0 gap-2 hStack">
-                        <a class="smaller" href="https://github.com/swiftcoderjoe/portfolio">Source Code</a>
-                        <a class="smaller" href="https://joecardenas.dev">Live Site</a>
-                    </div>
-                </div>
-                <img src="../img/Portfolio.png" alt="" class="height-25 mobile-height-50 square squircle">
-            </div>
-        </dialog>
 
         <footer>
             <div>
@@ -182,13 +165,34 @@
             </div>
         </footer>
 
-        <dialog id="memeinatorHomepageDialog">
+        <dialog id="portfolioDialog">
             <div class="hStack mobile-vStack gap-2">
                 <div class="vStack flex-1 p-0">
                     <div class="hStack p-0">
+                        <h3>Portfolio</h3>
+                        <Spacer></Spacer>
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('portfolioDialog')">
+                    </div>
+                    <p>This website is just as much a place to show off my projects as it is a showcase of my design and development skills. It's built with basic HTML and CSS, although it would be nice to someday rewrite it in a library like SolidJS. It's hosted on my homelab, and it's a great place to find lots of different information about me.</p>
+                    <Spacer class="mobile-height-4"></Spacer>
+                    <hr>
+                    <p>My Portfolio uses HTML5, CSS3, and JavaScript.</p>
+                    <div class="p-0 gap-2 hStack">
+                        <a class="smaller" href="https://github.com/swiftcoderjoe/portfolio">Source Code</a>
+                        <a class="smaller" href="https://joecardenas.dev">Live Site</a>
+                    </div>
+                </div>
+                <img src="../img/Portfolio.png" alt="" class="height-25 mobile-height-50 square squircle">
+            </div>
+        </dialog>
+
+        <dialog id="memeinatorHomepageDialog">
+            <div class="hStack mobile-vStack gap-2">
+                <div class="vStack flex-1 p-0">
+                    <div class="hStack p-0 yp-half">
                         <h3>Memeinator Site</h3>
                         <Spacer></Spacer>
-                        <h3 class="gray small divLink centerfix" onclick="closeModal('memeinatorHomepageDialog')">✖</h3>
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('memeinatorHomepageDialog')">
                     </div>
                     <p>The Memeinator landing page is a simple yet beautiful website built using SolidJS. After my experience with SwiftUI and declarative UI, SolidJS came very naturally to me and I find it much more convinient to use than just basic HTML/CSS. It is hosted on my Homelab.</p>
                     <Spacer class="mobile-height-4"></Spacer>
@@ -205,10 +209,10 @@
 
         <dialog id="reggiebotDialog">
             <div class="vStack flex-1 p-0">
-                <div class="hStack p-0">
+                <div class="hStack p-0 yp-half">
                     <h3>Reggiebot</h3>
                     <Spacer></Spacer>
-                    <h3 class="gray small divLink centerfix" onclick="closeModal('reggiebotDialog')">✖</h3>
+                    <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('reggiebotDialog')">
                 </div>
                 <p>Reggiebot is a small Discord Bot intended to send pictures as replies to messages. I intended to help build my skills in the Rust programming language by creating a small, superficial project in the Rust ecosystem. Through this bot, I've learned the basics of Rust and I've learned about automatic deployment techniques using Docker. It's named after a close friend of mine.</p>
                 <Spacer class="mobile-height-4"></Spacer>
@@ -223,10 +227,10 @@
         <dialog id="discordKitDialog">
             <div class="hStack mobile-vStack gap-2">
                 <div class="vStack flex-1 p-0">
-                    <div class="hStack p-0">
+                    <div class="hStack p-0 yp-half">
                         <h3>DiscordKit</h3>
                         <Spacer></Spacer>
-                        <h3 class="gray small divLink centerfix" onclick="closeModal('discordKitDialog')">✖</h3>
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('discordKitDialog')">
                     </div>
                     <p>DiscordKit is a proof of concept library for interacting with the Discord API. While DiscordKit's API coverage is extremely small and it is surely not ready for use in a production project, it is a robust foundation that could be easily extended to include far more of the API.</p>
                     <Spacer class="mobile-height-4"></Spacer>
@@ -241,10 +245,10 @@
         <dialog id="aer">
             <div class="hStack mobile-vStack gap-2">
                 <div class="vStack flex-1 p-0">
-                    <div class="hStack p-0">
+                    <div class="hStack p-0 yp-half">
                         <h3>Aer</h3>
                         <Spacer></Spacer>
-                        <h3 class="gray small divLink centerfix" onclick="closeModal('aer')">✖</h3>
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('aer')">
                     </div>
                     <p>Aer 1 is an advanced Discord bot that is used for moderation and other administration tasks. It can easily be configured and deployed. It currently runs in a number of servers and is available to self-host.</p>
                     <Spacer class="mobile-height-4"></Spacer>
@@ -259,10 +263,10 @@
         <dialog id="homelab">
             <div class="hStack mobile-vStack gap-2">
                 <div class="vStack flex-1 p-0">
-                    <div class="hStack p-0">
+                    <div class="hStack p-0 yp-half">
                         <h3>Helium</h3>
                         <Spacer></Spacer>
-                        <h3 class="gray small divLink centerfix" onclick="closeModal('homelab')">✖</h3>
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('homelab')">
                     </div>
                     <p>Helium is my home server, my playground for learning server-side technologies and selfhosting. It currently hosts all of my websites, a Nextcloud instance, a VPN, a mailserver, a Minecraft server, a Jellyfin media server, and more. Each service is behind a reverse proxy and every service is completely Dockerized, running on Rocky Linux.</p>
                     <Spacer class="mobile-height-4"></Spacer>
@@ -271,9 +275,23 @@
                 </div>
             </div>
         </dialog>
+
+        <dialog id="dumptruck">
+            <div class="hStack mobile-vStack gap-2">
+                <div class="vStack flex-1 p-0">
+                    <div class="hStack p-0 yp-half">
+                        <h3>The Dumptruck</h3>
+                        <Spacer></Spacer>
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('dumptruck')">
+                    </div>
+                    <p>The Dumptruck is hydroponics automation and testing robot built collaboratively with Davis Bachner. Davis worked on most of the hardware, and I wrote the software. The Dumptruck can support three plants, each with different nutrient schedules, useful for A/B testing. The Dumptruck includes a web interface, scheduler, motor driver, and a pH sensor all running on a Raspberry Pi and an Arduino. The Dumptruck has an advanced, modular and extensible project architecture. The Dumptruck's source code is open-source.</p>
+                    <Spacer class="mobile-height-4"></Spacer>
+                    <hr>
+                    <p>The Dumptruck uses HTML/CSS/JS, Express.js, Python, Raspberry Pi, Arduino, Redis, and more.</p>
+                    <a class="smaller" href="https://github.com/swiftcoderjoe/dumptruck">Source Code</a>
+                </div>
+                <img src="../img/dumptruck.JPG" alt="" class="height-25 mobile-height-50 square squircle">
+            </div>
+        </dialog>
     </body>
 </html>
-
-<!--
-    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
--->

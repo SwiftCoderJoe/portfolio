@@ -102,6 +102,15 @@ img.contain {
     padding: 0;
 }
 
+.p-half {
+    padding: 0.5rem;
+}
+
+.yp-half {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .xp-15 {
     padding-left: 15vw;
     padding-right: 15vw;
