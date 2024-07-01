@@ -7,5 +7,6 @@
 
 :80 {
     file_server
+    auto_https off
     header Cache-Control max-age=604800
 }
