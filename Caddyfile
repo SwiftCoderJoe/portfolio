@@ -12,5 +12,4 @@
 :80 {
     file_server
     header Cache-Control max-age=604800
-    log
 }
