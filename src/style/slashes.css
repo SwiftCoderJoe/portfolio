@@ -91,6 +91,16 @@ div.divider {
     background-color: #555;
 }
 
+div.multiButtonContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    & > .buttonLink {
+        margin: 0px;
+    }
+}
+
 /* Custom UI element styling*/
 
 a.buttonLink {
@@ -164,6 +174,11 @@ a.buttonLink:hover {
 @media (max-width: 800px) {
     a.buttonLink {
         box-shadow: -5px 5px black;
+    }
+
+    div.multiButtonContainer {
+        flex-direction: column;
+        align-items: center;
     }
 
     div.box {

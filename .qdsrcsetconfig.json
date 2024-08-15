@@ -3,6 +3,7 @@
     "outDir": "dist/",
     "imgDir": "img/",
     "ignore": [
-        "img/favicon/"
+        "img/favicon/",
+        "img/resume/"
     ]
 }
