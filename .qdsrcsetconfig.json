@@ -1,9 +1,0 @@
-{
-    "inDir": "src/",
-    "outDir": "dist/",
-    "imgDir": "img/",
-    "ignore": [
-        "img/favicon/",
-        "img/resume/"
-    ]
-}
