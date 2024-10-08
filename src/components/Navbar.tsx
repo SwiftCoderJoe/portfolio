@@ -17,13 +17,13 @@ export function Navbar() {
           <NavLink href=".">Links</NavLink>
         </HStack>
       </div>
-      <div class="border-y-2 border-r-2 border-black flex-shrink w-12 bg-gray-300 origin-top-left skew-y-30"></div>
+      <div class="border-y-2 border-black flex-shrink w-12 bg-gray-300 origin-top-left skew-y-30"></div>
     </HStack>
   );
 }
 
 const NavLink: ParentComponent<{href: string}> = ({ href, children }) => {
   return (
-    <A href={href} class="hover:bg-black mx-3 hover:text-white transition-all duration-200">{children}</A>
+    <A href={href} class="hover:bg-cyan-600 mx-3 hover:text-white transition-all duration-200">{children}</A>
   )
 }

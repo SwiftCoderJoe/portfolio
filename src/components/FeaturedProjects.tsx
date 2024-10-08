@@ -40,13 +40,10 @@ export const FeaturedProjects = () => {
 
 const ProjectContent = ({for: project}: {for: Accessor<Project>}) => {
   return (
-    <div class="px-5 flex-1">
-      <div class="p-5 bg-cyan-100/50 h-full">
-        <div class="border-2 border-cyan-600 h-full">
+    <div class="px-10 flex-1">
+        <div class="notches bg-gray-300 h-full">
           <h3 class="text-3xl">{project().name}</h3>
-
         </div>
-      </div>
     </div>
   )
 }
@@ -56,10 +53,10 @@ const ProjectPicker = ({setProject: setProject, projects: projects, selectedProj
     <VStack>
       {projects.map(project => (
         <HStack class="gap-0 group">
-          <div onClick={() => {setProject(project)}} class={`flex-1 ${project == selectedProject() ? "bg-gray-300" : "bg-gray-100"} group-hover:bg-gray-300/70 p-5 text-3xl`}>
+          <div onClick={() => {setProject(project)}} class={`flex-1 ${project == selectedProject() ? "bg-cyan-600 text-white" : "bg-gray-300"} group-hover:bg-cyan-600/70 p-5 text-3xl`}>
             {project.name}
           </div>
-          <div class={`flex-shrink w-12 ${project == selectedProject() ? "bg-gray-300" : "bg-gray-100"} group-hover:bg-gray-300/70 origin-top-left -skew-y-30`}></div>
+          <div class={`flex-shrink w-12 ${project == selectedProject() ? "bg-cyan-600" : "bg-gray-300"} group-hover:bg-cyan-600/70 origin-top-left -skew-y-30`}></div>
         </HStack>
       ))}
     </VStack>

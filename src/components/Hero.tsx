@@ -30,7 +30,7 @@ export function Hero() {
           <div class="flex-shrink w-24 bg-gray-300 origin-top-right -skew-y-30"></div>
           <VStack class="bg-gray-300 text-9xl p-14">
             <div>Joe Cardenas</div>
-            <div class="text-5xl">I'm your <span class="p-2 bg-black text-white">full</span> full-stack developer</div>
+            <div class="text-5xl">I'm your <span class="p-2 bg-cyan-600 text-white">full</span> full-stack developer</div>
           </VStack>
         </HStack>
 

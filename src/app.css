@@ -12,6 +12,17 @@ main {
   margin: 0 auto;
 }
 
+.notches {
+  clip-path: polygon(
+    0 20%,
+    10% 0,
+    100% 0,
+    100% 80%,
+    90% 100%,
+    0% 100%
+  );
+}
+
 h1 {
   color: #335d92;
   font-family: "Chakra Petch";
