@@ -10,6 +10,7 @@ export default {
         nav: "1.8rem;"
       },
       skew: {
+        '7': '7deg',
         '30': '30deg',
       },
       animation: {
