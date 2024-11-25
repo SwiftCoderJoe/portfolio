@@ -118,6 +118,10 @@
             <div class="vStack flex-1 align-self-stretch">
                 <h2>More Projects</h2>
                 <div class="grid-2-wide mobile-vStack gap-2 xp-15">
+                    <div class="box vStack flex-1 divLink" onclick="openModal('memeinatorDialog')">
+                        <h3>Memeinator</h3>
+                        <p class="truncated-1">Memeinator is an iOS app that allows you to easily change regular text into meme text, currently available on the App Store for free. It includes complex, layered text transformations and a keyboard extension. Memeinator is monetized with In-App-Purchases using StoreKit 2. Memeinator's source is robust and well-documented, and open-source.</p>
+                    </div>
                     <div class="box vStack flex-1 divLink" onclick="openModal('aer')">
                         <h3>Aer</h3>
                         <p class="truncated-1">Aer 1 is an advanced Discord bot that is used for moderation and other administration tasks. It can easily be configured and deployed. It currently runs in a number of servers and is available to self-host.</p>
@@ -164,6 +168,27 @@
                 <a class="noMono smaller" href="https://www.flaticon.com/authors/freepik">Icons created by Freepik</a>
             </div>
         </footer>
+
+        <dialog id="memeinatorDialog">
+            <div class="hStack mobile-vStack gap-2">
+                <div class="vStack flex-1 p-0">
+                    <div class="hStack p-0">
+                        <h3>Memeinator</h3>
+                        <Spacer></Spacer>
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('memeinatorDialog')">
+                    </div>
+                    <p>Memeinator is an iOS app that allows you to easily change regular text into meme text, currently available on the App Store for free. It includes complex, layered text transformations and a keyboard extension. Memeinator is monetized with In-App-Purchases using StoreKit 2. Memeinator's source is robust and well-documented, and open-source.</p>
+                    <Spacer class="mobile-height-4"></Spacer>
+                    <hr>
+                    <p>Memeinator uses Swift, SwiftUI, StoreKit, and KeyboardKit.</p>
+                    <div class="p-0 gap-2 hStack">
+                        <a class="smaller" href="https://memeinator.joecardenas.dev">Landing Page</a>
+                        <a class="smaller" href="https://github.com/SwiftCoderJoe/memeinator">Source Code</a>
+                    </div>
+                </div>
+                <img src="../img/memeinator.png" alt="" class="height-25 mobile-height-50 square squircle">
+            </div>
+        </dialog>
 
         <dialog id="portfolioDialog">
             <div class="hStack mobile-vStack gap-2">
