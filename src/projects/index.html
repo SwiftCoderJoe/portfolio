@@ -69,7 +69,7 @@
                         <Spacer class="mobile-height-4"></Spacer>
                         <hr>
                         <p>This computer uses WDC 65C-Series ICs and 6502 Assembly</p>
-                        <a class="smaller" href="https://github.com/swiftcoderjoe/dumptruck">Source Code</a>
+                        <a class="smaller" href="https://github.com/swiftcoderjoe/6502-code">Source Code</a>
                     </div>
                 </div>
                 <img src="../img/6502computer.png" alt="" class="height-25 mobile-height-50 square squircle">
@@ -79,19 +79,20 @@
         <div class="slash">
             <div class="hStack align-center mobile-vStack xp-15 mobile-xp-9 gap-2">
                 <div class="vStack flex-1 align-self-stretch">
-                    <h2>Memeinator</h2>
+                    <h2>Discord Imitator Project</h2>
                     <div class="box vStack flex-1">
-                        <p>Memeinator is an iOS app that allows you to easily change regular text into meme text, currently available on the App Store for free. It includes complex, layered text transformations and a keyboard extension. Memeinator is monetized with In-App-Purchases using StoreKit 2. Memeinator's source is robust and well-documented, and open-source.</p>
-                        <Spacer class"mobile-height-4></Spacer>
+                        <p>The Imitator Project created a Discord bot that would imitate one of my good friends. It queries Anthropic Claude with a prompt and contextual conversation data to get a response to send to the chatroom. I updated and extended DiscordKit, created a new Anthropic Swift library, created a new ImitatorAI Swift library, and deployed a custom implementation of those libraries onto my personal server.</p>
+                        <Spacer class="mobile-height-4"></Spacer>
                         <hr>
-                        <p>Memeinator uses Swift, SwiftUI, StoreKit, and KeyboardKit.</p>
+                        <p>The Imitator Project uses Swift, SwiftAnthropic, DiscordKit, and ImitatorAI.</p>
                         <div class="hStack p-0 gap-2">
-                            <a class="smaller" href="https://memeinator.joecardenas.dev">Landing Page</a>
-                            <a class="smaller" href="https://github.com/SwiftCoderJoe/memeinator">Source Code</a>
+                            <a class="smaller" href="https://github.com/SwiftCoderJoe/SwiftAnthropic">SwiftAnthropic</a>
+                            <a class="smaller" href="https://github.com/SwiftCoderJoe/DiscordKit">DiscordKit</a>
+                            <a class="smaller" href="https://github.com/SwiftCoderJoe/ImitatorAI">ImitatorAI</a>
                         </div>
                     </div>
                 </div>
-                <img src="../img/memeinator.png" alt="" class="height-25 mobile-height-50 square squircle">
+                <img src="../img/aiden.png" alt="" class="height-25 mobile-height-50 square squircle">
             </div>
         </div>
 
@@ -118,21 +119,13 @@
             <div class="vStack flex-1 align-self-stretch">
                 <h2>More Projects</h2>
                 <div class="grid-2-wide mobile-vStack gap-2 xp-15">
-                    <div class="box vStack flex-1 divLink" onclick="openModal('aer')">
-                        <h3>Aer</h3>
-                        <p class="truncated-1">Aer 1 is an advanced Discord bot that is used for moderation and other administration tasks. It can easily be configured and deployed. It currently runs in a number of servers and is available to self-host.</p>
+                    <div class="box vStack flex-1 divLink" onclick="openModal('memeinatorDialog')">
+                        <h3>Memeinator</h3>
+                        <p class="truncated-1">Memeinator is an iOS app that allows you to easily change regular text into meme text, currently available on the App Store for free. It includes complex, layered text transformations and a keyboard extension. Memeinator is monetized with In-App-Purchases using StoreKit 2. Memeinator's source is robust and well-documented, and open-source.</p>
                     </div>
-                    <div class="box vStack flex-1 divLink" onclick="openModal('portfolioDialog')">
-                        <h3>Portfolio</h3>
-                        <p class="truncated-1">This website is just as much a place to show off my projects as it is a showcase of my design and development skills. It's built with basic HTML and CSS, although it would be nice to someday rewrite it in a library like SolidJS. It's hosted on my homelab, and it's a great place to find lots of different information about me.</p>
-                    </div>
-                    <div class="box vStack flex-1 divLink" onclick="openModal('memeinatorHomepageDialog')">
-                        <h3>Memeinator Site</h3>
-                        <p class="truncated-1">The Memeinator landing page is a simple yet beautiful website built using SolidJS. After my experience with SwiftUI and declarative UI, SolidJS came very naturally to me and I find it much more convinient to use than just basic HTML/CSS. It is hosted on my Homelab.</p>
-                    </div>
-                    <div class="box vStack flex-1 divLink" onclick="openModal('reggiebotDialog')">
-                        <h3>Reggiebot</h3>
-                        <p class="truncated-1">Reggiebot is a small Discord Bot intended to send pictures as replies to messages. I intended to help build my skills in the Rust programming language by creating a small, superficial project in the Rust ecosystem. Through this bot, I've learned the basics of Rust and I've learned about automatic deployment techniques using Docker. It's named after a close friend of mine.</p>
+                    <div class="box vStack flex-1 divLink" onclick="openModal('dumptruck')">
+                        <h3>The Dumptruck</h3>
+                        <p class="truncated-1">The Dumptruck is hydroponics automation and testing robot built collaboratively with Davis Bachner. Davis worked on most of the hardware, and I wrote the software. The Dumptruck can support three plants, each with different nutrient schedules, useful for A/B testing. The Dumptruck includes a web interface, scheduler, motor driver, and a pH sensor all running on a Raspberry Pi and an Arduino. The Dumptruck has an advanced, modular and extensible project architecture. The Dumptruck's source code is open-source.</p>
                     </div>
                     <div class="box vStack flex-1 divLink" onclick="openModal('discordKitDialog')">
                         <h3>DiscordKit</h3>
@@ -142,9 +135,25 @@
                         <h3>Helium (HomeLab)</h3>
                         <p class="truncated-1">Helium is my home server, my playground for learning server-side technologies and selfhosting. It currently hosts all of my websites, a Nextcloud instance, a VPN, a mailserver, a Minecraft server, a Jellyfin media server, and more. Each service is behind a reverse proxy and every service is completely Dockerized.</p>
                     </div>
-                    <div class="box vStack flex-1 divLink" onclick="openModal('dumptruck')">
-                        <h3>The Dumptruck</h3>
-                        <p class="truncated-1">The Dumptruck is hydroponics automation and testing robot built collaboratively with Davis Bachner. Davis worked on most of the hardware, and I wrote the software. The Dumptruck can support three plants, each with different nutrient schedules, useful for A/B testing. The Dumptruck includes a web interface, scheduler, motor driver, and a pH sensor all running on a Raspberry Pi and an Arduino. The Dumptruck has an advanced, modular and extensible project architecture. The Dumptruck's source code is open-source.</p>
+                    <div class="box vStack flex-1 divLink" onclick="openModal('hackcmu2024Dialog')">
+                        <h3>HackCMU 2024</h3>
+                        <p class="truncated-1">Helium is my home server, my playground for learning server-side technologies and selfhosting. It currently hosts all of my websites, a Nextcloud instance, a VPN, a mailserver, a Minecraft server, a Jellyfin media server, and more. Each service is behind a reverse proxy and every service is completely Dockerized.</p>
+                    </div>
+                    <div class="box vStack flex-1 divLink" onclick="openModal('reggiebotDialog')">
+                        <h3>Reggiebot</h3>
+                        <p class="truncated-1">Reggiebot is a small Discord Bot intended to send pictures as replies to messages. I intended to help build my skills in the Rust programming language by creating a small, superficial project in the Rust ecosystem. Through this bot, I've learned the basics of Rust and I've learned about automatic deployment techniques using Docker. It's named after a close friend of mine.</p>
+                    </div>
+                    <div class="box vStack flex-1 divLink" onclick="openModal('portfolioDialog')">
+                        <h3>Portfolio</h3>
+                        <p class="truncated-1">This website is just as much a place to show off my projects as it is a showcase of my design and development skills. It's built with basic HTML and CSS, although it would be nice to someday rewrite it in a library like SolidJS. It's hosted on my homelab, and it's a great place to find lots of different information about me.</p>
+                    </div>
+                    <div class="box vStack flex-1 divLink" onclick="openModal('memeinatorHomepageDialog')">
+                        <h3>Memeinator Site</h3>
+                        <p class="truncated-1">The Memeinator landing page is a simple yet beautiful website built using SolidJS. After my experience with SwiftUI and declarative UI, SolidJS came very naturally to me and I find it much more convinient to use than just basic HTML/CSS. It is hosted on my Homelab.</p>
+                    </div>
+                    <div class="box vStack flex-1 divLink" onclick="openModal('aerDialog')">
+                        <h3>Aer</h3>
+                        <p class="truncated-1">Aer 1 is an advanced Discord bot that is used for moderation and other administration tasks. It can easily be configured and deployed. It currently runs in a number of servers and is available to self-host.</p>
                     </div>
                 </div>
             </div>
@@ -164,6 +173,46 @@
                 <a class="noMono smaller" href="https://www.flaticon.com/authors/freepik">Icons created by Freepik</a>
             </div>
         </footer>
+
+        <dialog id="hackcmu2024Dialog">
+            <div class="hStack mobile-vStack gap-2">
+                <div class="vStack flex-1 p-0">
+                    <div class="hStack p-0">
+                        <h3>Study Group Finder (HackCMU 2024)</h3>
+                        <Spacer></Spacer>
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('hackcmu2024Dialog')">
+                    </div>
+                    <p>Study Group Finder was a small project built in no more than 10 hours for the HackCMU 2024 Hackathon. It is not feature-complete, but it was built very quickly and is very extensible, built with a robust backend.</p>
+                    <Spacer class="mobile-height-4"></Spacer>
+                    <hr>
+                    <p>Study Group Finder was built using Firebase and Next.js</p>
+                    <div class="p-0 gap-2 hStack">
+                        <a class="smaller" href="https://github.com/SwiftCoderJoe/HackCMU24/">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="memeinatorDialog">
+            <div class="hStack mobile-vStack gap-2">
+                <div class="vStack flex-1 p-0">
+                    <div class="hStack p-0">
+                        <h3>Memeinator</h3>
+                        <Spacer></Spacer>
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('memeinatorDialog')">
+                    </div>
+                    <p>Memeinator is an iOS app that allows you to easily change regular text into meme text, currently available on the App Store for free. It includes complex, layered text transformations and a keyboard extension. Memeinator is monetized with In-App-Purchases using StoreKit 2. Memeinator's source is robust and well-documented, and open-source.</p>
+                    <Spacer class="mobile-height-4"></Spacer>
+                    <hr>
+                    <p>Memeinator uses Swift, SwiftUI, StoreKit, and KeyboardKit.</p>
+                    <div class="p-0 gap-2 hStack">
+                        <a class="smaller" href="https://memeinator.joecardenas.dev">Landing Page</a>
+                        <a class="smaller" href="https://github.com/SwiftCoderJoe/memeinator">Source Code</a>
+                    </div>
+                </div>
+                <img src="../img/memeinator.png" alt="" class="height-25 mobile-height-50 square squircle">
+            </div>
+        </dialog>
 
         <dialog id="portfolioDialog">
             <div class="hStack mobile-vStack gap-2">
@@ -242,13 +291,13 @@
             </div>
         </dialog>
 
-        <dialog id="aer">
+        <dialog id="aerDialog">
             <div class="hStack mobile-vStack gap-2">
                 <div class="vStack flex-1 p-0">
                     <div class="hStack p-0 yp-half">
                         <h3>Aer</h3>
                         <Spacer></Spacer>
-                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('aer')">
+                        <img class="small gray divLink p-half" src="../img/x-mark.svg" alt="Close this Dialog" onclick="closeModal('aerDialog')">
                     </div>
                     <p>Aer 1 is an advanced Discord bot that is used for moderation and other administration tasks. It can easily be configured and deployed. It currently runs in a number of servers and is available to self-host.</p>
                     <Spacer class="mobile-height-4"></Spacer>
