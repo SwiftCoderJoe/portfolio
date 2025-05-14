@@ -1,6 +1,5 @@
 div.project {
-    /* Note that this is only 23 because of The Dumptruck. Set it back to 20 if The Dumptruck ever leaves featured. */
-    height: 23vw;
+    height: 100%;
     width: 70vw;
 
     margin: 0vw 5vw;
@@ -13,12 +12,9 @@ div.project {
     overflow: hidden;
 
     color: black;
-    box-shadow: -15px 15px 0 #000;
 }
 
 switch {
-    border-radius: 2vw;
-    padding: 1.5vw;
     opacity: 1;
 
     transition: all 200ms;
@@ -28,18 +24,23 @@ switch.invisible {
     opacity: 0;
 }
 
-div.project > img {
+div.project > div > img {
     border-radius: 10px;
-    height: 23vw;
-    display: block;
-    margin: auto;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 div.project > div {
     display: flex;
     flex-direction: column;
+    position: relative;
 
-    padding: 1.5vw;
+    padding: 1vw;
 }
 
 div.imageCaption {
@@ -57,7 +58,6 @@ div.imageCaption > p {
 
     border-radius: 15px;
     background-color: #fff;
-    box-shadow: -15px 15px 0 #000;
 }
 
 div.imageCaption > div {
@@ -180,25 +180,20 @@ div.infiniteScrollContainer > div > div:first-child {
 }
 
 div.infiniteScrollContainer > div > div > * {
-    background-color: #ccc;
     vertical-align: middle;
 
-    padding: 1.5vw;
-    margin: 1vw;
+    margin: 2rem;
 
     white-space: nowrap;
-
-    border-radius: 10px;
-    box-shadow: -10px 10px black;
+    position: relative;
 } 
 
 div.infiniteScrollContainer > div > div:nth-child(2) {
     position: absolute;
 
-    top: 2vw;
+    top: 1vw;
     left: 0;
     right: 0;
-    bottom: 2vw;
 
     padding: 0;
 

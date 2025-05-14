@@ -64,16 +64,15 @@ div.boxContainer {
     grid: 1fr / 1fr 1fr;
     gap: 5vw;
 
-    padding: 1.5vw 5vw;
+    padding: 1vw 5vw;
     padding-bottom: 4vw; /* This probably shouldn't exist, but smh */
 }
 
 div.box {
-    padding: 1.5vw;
+    padding: 1vw;
 
     border-radius: 15px;
     background-color: white;
-    box-shadow: -15px 15px 0 #000;
 
     /* This is set because of the line truncation in Projects/More Projects */
     overflow: hidden;
@@ -110,9 +109,9 @@ div.multiButtonContainer {
 .colorUnderline::after {
   content: "";
   position: absolute;
-  bottom: 12px;
+  bottom: .05em;
   left: 0;
-  height: 4px;
+  height: 0.1em;
   width: 100%;
   background: #444;
   background: linear-gradient(90deg,rgba(0, 132, 194, 1) 0%, rgba(0, 199, 83, 1) 100%);
@@ -127,26 +126,52 @@ a.buttonLink {
     display: block;
     margin: 0 auto;
     width: fit-content;
-
+    border-radius: 10px;
     padding: 0.5vw;
+    box-shadow: 0px 0px 10px -6px;
 
-    background-color: #fff;
-
+    position: relative;
     cursor: pointer;
 
     transition: all 200ms;
-
-    border-radius: 10px;
-    box-shadow: -10px 10px black;
 }
 
-a.buttonLink.gray {
+a.buttonLink::before {
+    content: "";
+    transition: all 200ms;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    background-color: #fff;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+a.buttonLink::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg,rgba(0, 132, 194, 1) 0%, rgba(0, 199, 83, 1) 100%);
+    z-index: -2;
+    border-radius: 10px;
+}
+
+a.buttonLink.gray::before {
     background-color: #ccc;
 }
 
 a.buttonLink:hover {
-    background-color: #eee;
-    box-shadow: -5px 5px black;
+    box-shadow: 0px 0px 20px -1px;
+}
+
+a.buttonLink:hover::before {
+    opacity: 0;
 }
 
 .divLink {
@@ -155,7 +180,6 @@ a.buttonLink:hover {
     transition: all 200ms;
 
     border-radius: 10px;
-    box-shadow: -10px 10px black;
 }
 
 .divLink.gray {
@@ -164,17 +188,13 @@ a.buttonLink:hover {
 
 .small.divLink {
     border-radius: 15px;
-    box-shadow: -5px 5px black;
 }
 
 .divLink:hover {
     background-color: #eee;
-    box-shadow: -5px 5px black;
 }
 
-.small.divLink:hover {
-    box-shadow: -3px 3px black;
-}
+.small.divLink:hover { }
 
 /* FOR REFERENCE:
 

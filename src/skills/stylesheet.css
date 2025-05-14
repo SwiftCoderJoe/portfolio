@@ -13,9 +13,7 @@ div.specialties > div.bottom {
 
 div.specialties > div {
     border-radius: 15px;
-    background-color: white;
-    box-shadow: -15px 15px 0 #000;
-    
+    background-color: white;    
 }
 
 div.hardware > div {
