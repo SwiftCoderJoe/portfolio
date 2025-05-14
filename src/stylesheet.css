@@ -17,16 +17,15 @@ div.project {
 }
 
 switch {
-    background-color: #000;
     border-radius: 2vw;
     padding: 1.5vw;
-    color: #fff;
+    opacity: 1;
 
     transition: all 200ms;
 }
 
 switch.invisible {
-    background-color: #fff;
+    opacity: 0;
 }
 
 div.project > img {

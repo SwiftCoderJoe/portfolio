@@ -103,6 +103,22 @@ div.multiButtonContainer {
 
 /* Custom UI element styling*/
 
+.colorUnderline {
+    position: relative;
+}
+
+.colorUnderline::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #444;
+  background: linear-gradient(90deg,rgba(0, 132, 194, 1) 0%, rgba(0, 199, 83, 1) 100%);
+  z-index: -1;
+}
+
 a.buttonLink {
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
