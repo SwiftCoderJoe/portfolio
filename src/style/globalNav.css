@@ -52,12 +52,14 @@ footer > div > a::after {
   background: #444;
   background: linear-gradient(90deg,rgba(0, 132, 194, 1) 0%, rgba(0, 199, 83, 1) 100%);
   z-index: -1;
+  width: 0%;
   opacity: 0;
   transition: all 200ms;
 }
 
 footer > div > a:hover::after {
     opacity: 1;
+    width: 100%;
 }
 
 footer > div:nth-child(3) {

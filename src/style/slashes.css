@@ -127,7 +127,7 @@ a.buttonLink {
     margin: 0 auto;
     width: fit-content;
     border-radius: 10px;
-    padding: 0.5vw;
+    padding: 1rem;
     box-shadow: 0px 0px 10px -6px;
 
     position: relative;
@@ -138,28 +138,28 @@ a.buttonLink {
 
 a.buttonLink::before {
     content: "";
-    transition: all 200ms;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 1;
     background-color: #fff;
-    z-index: -1;
+    z-index: -2;
     border-radius: 10px;
 }
 
 a.buttonLink::after {
+    transition: all 200ms;
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 100%;
     background: linear-gradient(90deg,rgba(0, 132, 194, 1) 0%, rgba(0, 199, 83, 1) 100%);
-    z-index: -2;
+    z-index: -1;
     border-radius: 10px;
+    opacity: 0;
 }
 
 a.buttonLink.gray::before {
@@ -170,8 +170,12 @@ a.buttonLink:hover {
     box-shadow: 0px 0px 20px -1px;
 }
 
-a.buttonLink:hover::before {
-    opacity: 0;
+a.buttonLink:hover::after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 1;
 }
 
 .divLink {
