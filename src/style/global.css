@@ -84,6 +84,7 @@ img.contain {
 .vStack {
     display: flex;
     flex-direction: column;
+    z-index: 0;
 }
 
 .flex-1 {
@@ -123,6 +124,7 @@ img.contain {
 .hStack {
     display: flex;
     flex-direction: row;
+    z-index: 0;
 }
 
 .grid-2-wide {

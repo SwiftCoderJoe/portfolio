@@ -27,28 +27,32 @@ svg {
     transform-origin: 50% 0;
 }
 
+.slash.white::before {
+    background-color: #ffffff;
+}
+
 .noMono {
     font-family: 'Roboto' !important;
 }
 
 .iconTitleText {
     display: grid;
-    grid: "a b" 3vw
-          "end end" 1fr / 3vw 1fr;
+    grid: "a b" 3rem
+          "end end" 1fr / 3rem 1fr;
 
     padding: 0;
-    gap: 1vw;
+    gap: 1rem;
 }
 
 .iconTitleText > img {
     display: block;
     margin: auto;
     /* this is slightly larger than 3 because i think it looks nice deal with it */
-    height: 3.25vw;
+    height: 3rem;
 }
 
 .iconTitleText > h3 {
-    line-height: 0.75;
+    line-height: 1;
 }
 
 .iconTitleText > p {
@@ -60,12 +64,13 @@ svg {
 }
 
 div.boxContainer {
-    display: grid;
-    grid: 1fr / 1fr 1fr;
-    gap: 5vw;
+    display: flex;
+    flex-direction: column;
 
-    padding: 1vw 5vw;
-    padding-bottom: 4vw; /* This probably shouldn't exist, but smh */
+    width: 70rem;
+    gap: 5rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
 }
 
 div.box {

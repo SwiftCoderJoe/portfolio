@@ -1,10 +1,12 @@
 div.specialties {
-    padding: 1.5vw 9vw;
+    margin: 0 auto;
+    padding: 3rem 0;
+    width: 70rem;
 
     display: grid;
     grid: "a b" min-content 
           "bottom bottom" min-content / 1fr 1fr ;
-    gap: 2vw;
+    gap: 2rem;
 }
 
 div.specialties > div.bottom {
@@ -17,7 +19,7 @@ div.specialties > div {
 }
 
 div.hardware > div {
-    padding: 0 1vw;
+    padding: 0 1rem;
     display: grid;
     grid: "a b" 5vw
           "c c" 1fr / 6vw 1fr;
