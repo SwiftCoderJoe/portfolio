@@ -30,6 +30,12 @@ div.titleImageCaption > img {
     border-radius: 50%;
 }
 
+div.projectContainer {
+    display: grid;
+    grid: 1fr / 2fr 1fr ;
+    gap: 2rem;
+}
+
 @media (max-width: 800px) {
     div.titleImageCaption {
         padding-left: 9vw;

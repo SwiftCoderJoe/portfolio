@@ -23,7 +23,7 @@ svg {
     left: 0;
     right: 0;
     bottom: 0;
-    transform: skewY(-6deg);
+    transform: skewY(-4deg);
     transform-origin: 50% 0;
 }
 
@@ -71,6 +71,11 @@ div.boxContainer {
     gap: 5rem;
     margin: 0 auto;
     padding-bottom: 5rem;
+}
+
+.content-width {
+    width: 70rem;
+    margin: 0 auto;
 }
 
 div.box {
@@ -133,7 +138,7 @@ a.buttonLink {
     width: fit-content;
     border-radius: 10px;
     padding: 1rem;
-    box-shadow: 0px 0px 10px -6px;
+    box-shadow: 0px 0px 15px -5px;
 
     position: relative;
     cursor: pointer;
@@ -141,7 +146,7 @@ a.buttonLink {
     transition: all 200ms;
 }
 
-a.buttonLink::before {
+a.buttonLink::before, .divLink::before {
     content: "";
     position: absolute;
     top: 0;
@@ -153,7 +158,7 @@ a.buttonLink::before {
     border-radius: 10px;
 }
 
-a.buttonLink::after {
+a.buttonLink::after, .divLink::after {
     transition: all 200ms;
     content: "";
     position: absolute;
@@ -167,15 +172,15 @@ a.buttonLink::after {
     opacity: 0;
 }
 
-a.buttonLink.gray::before {
+a.buttonLink.gray::before, .divLink.gray::before {
     background-color: #ccc;
 }
 
-a.buttonLink:hover {
+a.buttonLink:hover, .divLink:hover {
     box-shadow: 0px 0px 20px -1px;
 }
 
-a.buttonLink:hover::after {
+a.buttonLink:hover::after, .divLink:hover::after {
     left: 0;
     right: 0;
     bottom: 0;
@@ -189,6 +194,8 @@ a.buttonLink:hover::after {
     transition: all 200ms;
 
     border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 15px -5px;
 }
 
 .divLink.gray {
