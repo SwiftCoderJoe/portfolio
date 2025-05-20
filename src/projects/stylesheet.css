@@ -22,13 +22,18 @@ div.titleImageCaption > div > div {
 
     border-radius: 15px;
     background-color: #fff;
-    box-shadow: -15px 15px 0 #000;
 }
 
 div.titleImageCaption > img {
     width: 25vw;
     height: 25vw;
     border-radius: 50%;
+}
+
+div.projectContainer {
+    display: grid;
+    grid: 1fr / 2fr 1fr ;
+    gap: 2rem;
 }
 
 @media (max-width: 800px) {
@@ -51,5 +56,11 @@ div.titleImageCaption > img {
 
     div.titleImageCaption spacer {
         height: 4vw;
+    }
+
+    div.projectContainer {
+        display: grid;
+        grid: 1fr 1fr / 1fr ;
+        gap: 2rem;
     }
 }

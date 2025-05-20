@@ -23,8 +23,12 @@ svg {
     left: 0;
     right: 0;
     bottom: 0;
-    transform: skewY(-6deg);
+    transform: skewY(-4deg);
     transform-origin: 50% 0;
+}
+
+.slash.white::before {
+    background-color: #ffffff;
 }
 
 .noMono {
@@ -33,22 +37,22 @@ svg {
 
 .iconTitleText {
     display: grid;
-    grid: "a b" 3vw
-          "end end" 1fr / 3vw 1fr;
+    grid: "a b" 3rem
+          "end end" 1fr / 3rem 1fr;
 
     padding: 0;
-    gap: 1vw;
+    gap: 1rem;
 }
 
 .iconTitleText > img {
     display: block;
     margin: auto;
     /* this is slightly larger than 3 because i think it looks nice deal with it */
-    height: 3.25vw;
+    height: 3rem;
 }
 
 .iconTitleText > h3 {
-    line-height: 0.75;
+    line-height: 1;
 }
 
 .iconTitleText > p {
@@ -59,21 +63,16 @@ svg {
     border-radius: 15px;
 }
 
-div.boxContainer {
-    display: grid;
-    grid: 1fr / 1fr 1fr;
-    gap: 5vw;
-
-    padding: 1.5vw 5vw;
-    padding-bottom: 4vw; /* This probably shouldn't exist, but smh */
+.content-width {
+    width: 70rem;
+    margin: 0 auto;
 }
 
 div.box {
-    padding: 1.5vw;
+    padding: 1vw;
 
     border-radius: 15px;
     background-color: white;
-    box-shadow: -15px 15px 0 #000;
 
     /* This is set because of the line truncation in Projects/More Projects */
     overflow: hidden;
@@ -103,6 +102,22 @@ div.multiButtonContainer {
 
 /* Custom UI element styling*/
 
+.colorUnderline {
+    position: relative;
+}
+
+.colorUnderline::after {
+  content: "";
+  position: absolute;
+  bottom: .05em;
+  left: 0;
+  height: 0.1em;
+  width: 100%;
+  background: #444;
+  background: linear-gradient(90deg,rgba(0, 132, 194, 1) 0%, rgba(0, 199, 83, 1) 100%);
+  z-index: -1;
+}
+
 a.buttonLink {
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
@@ -111,26 +126,56 @@ a.buttonLink {
     display: block;
     margin: 0 auto;
     width: fit-content;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px -5px;
 
-    padding: 0.5vw;
-
-    background-color: #fff;
-
+    position: relative;
     cursor: pointer;
 
     transition: all 200ms;
-
-    border-radius: 10px;
-    box-shadow: -10px 10px black;
 }
 
-a.buttonLink.gray {
+a.buttonLink::before, .divLink::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: -2;
+    border-radius: 10px;
+}
+
+a.buttonLink::after, .divLink::after {
+    transition: all 200ms;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background: linear-gradient(90deg,rgba(0, 132, 194, 1) 0%, rgba(0, 199, 83, 1) 100%);
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+a.buttonLink.gray::before, .divLink.gray::before {
     background-color: #ccc;
 }
 
-a.buttonLink:hover {
-    background-color: #eee;
-    box-shadow: -5px 5px black;
+a.buttonLink:hover, .divLink:hover {
+    box-shadow: 0px 0px 20px -1px;
+}
+
+a.buttonLink:hover::after, .divLink:hover::after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 1;
 }
 
 .divLink {
@@ -139,7 +184,8 @@ a.buttonLink:hover {
     transition: all 200ms;
 
     border-radius: 10px;
-    box-shadow: -10px 10px black;
+    position: relative;
+    box-shadow: 0px 0px 15px -5px;
 }
 
 .divLink.gray {
@@ -148,69 +194,28 @@ a.buttonLink:hover {
 
 .small.divLink {
     border-radius: 15px;
-    box-shadow: -5px 5px black;
 }
 
 .divLink:hover {
     background-color: #eee;
-    box-shadow: -5px 5px black;
 }
 
-.small.divLink:hover {
-    box-shadow: -3px 3px black;
-}
+.small.divLink:hover { }
 
-/* FOR REFERENCE:
-
-9vw horizontal padding for wide elements
-25vw for slimmer ones
-
-1.5vw vertical on most divs
-
-1.5vw padding for most things in boxes
-
-*/
-
-@media (max-width: 800px) {
-    a.buttonLink {
-        box-shadow: -5px 5px black;
-    }
-
-    div.multiButtonContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div.box {
-        padding: 3vw;
+@media (max-width: 996px) {
+    .content-width {
+        width: 90vw;
+        margin: 0 auto;
     }
 
     .iconTitleText {
         grid: "a b" 6vw
               "end end" 1fr / 6vw 1fr;
-    
-        gap: 1vw;
     }
 
     .iconTitleText > img {
         display: block;
         margin: auto;
-        /* this is slightly larger than 7 because i think it looks nice deal with it */
-        height: 6vw;
     }
 
-    div.boxContainer {
-        grid: min-content min-content / 1fr;
-
-        padding: 5vw 9vw;
-    }
-
-    .small.divLink {
-        box-shadow: -3px 3px black;
-    }
-
-    .small.divLink:hover {
-        box-shadow: -1px 1px black;
-    }
-    
 }
