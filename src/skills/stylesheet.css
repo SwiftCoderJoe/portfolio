@@ -1,7 +1,6 @@
 div.specialties {
     margin: 0 auto;
     padding: 3rem 0;
-    width: 70rem;
 
     display: grid;
     grid: "a b" min-content 

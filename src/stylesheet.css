@@ -46,9 +46,6 @@ div.project > div {
 div.imageCaption {
     display: flex;
     gap: 2vw;
-
-    padding-left: 25vw;
-    padding-right: 25vw;
 }
 
 div.imageCaption > p {
@@ -258,22 +255,5 @@ div.projectScrollContainer.slideTo2 > div:first-child {
 
     div.projectScrollContainer > div:nth-child(2) > button {   
         width: 10vw;
-    }
-
-    div.infiniteScrollContainer > div > div:nth-child(2) {
-        top: 5vw;
-    }
-
-    div.infiniteScrollContainer > div > div > * {
-        box-shadow: -5px 5px black;
-    }
-
-    div.imageCaption {
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-
-    div.imageCaption > p {
-        box-shadow: -5px 5px 0 #000;
     }
 }

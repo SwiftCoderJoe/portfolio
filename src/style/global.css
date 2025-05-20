@@ -178,43 +178,15 @@ Spacer {
     flex-grow: 1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
     html {
         font-size: 12px;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
     html {
         font-size: 8px;
-    }
-
-    div {
-        padding: 5vw 0px;
-    }
-
-    h1 {
-        font-size: 12vw;
-    }
-
-    h1.smaller {
-        font-size: 5vw;
-    }
-
-    h2 {
-        font-size: 8vw;
-    }
-
-    h3 {
-        font-size: 6vw;
-    }
-
-    a {
-        font-size: 5vw;
-    }
-
-    p, a.smaller {
-        font-size: 3.75vw;
     }
 
     .mobile-vStack {
@@ -236,8 +208,24 @@ Spacer {
     }
 }
 
-@media (min-width: 801px) {
-    .desktop-p-0 {
-        padding: 0;
+@media (max-width: 600px) {
+    html {
+        font-size: 6px;
+    }
+
+    a {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    a.smaller {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+        font-family: 'Roboto';
+        text-align: left;
     }
 }

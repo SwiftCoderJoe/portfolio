@@ -57,4 +57,10 @@ div.projectContainer {
     div.titleImageCaption spacer {
         height: 4vw;
     }
+
+    div.projectContainer {
+        display: grid;
+        grid: 1fr 1fr / 1fr ;
+        gap: 2rem;
+    }
 }
