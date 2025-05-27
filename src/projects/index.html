@@ -45,9 +45,9 @@
         </header>
 
         <div class="slash">
-            <div class="hStack align-center mobile-vStack xp-15 mobile-xp-9 gap-2">
-                <div class="vStack flex-1 align-self-stretch">
-                    <h2>StatShot</h2>
+            <div>
+                <h2>StatShot</h2>
+                <div class="projectContainer content-width">
                     <div class="box vStack flex-1">
                         <p>StatShot is a golf analytics iOS app built collaboratively with my Hopkins golf team Co-Captain Ryan Coffey. StatShot allows golfers to quickly and easily input round data, and then proceed to analyze their rounds using an innovative new technique called Strokes Gained. Strokes Gained allows golfers to see exactly which part of their game needs the most practice. We released the first public version of StatShot just two months after its inception.</p>
                         <Spacer class="mobile-height-4"></Spacer>
@@ -55,15 +55,17 @@
                         <p>StatShot uses SwiftUI and SwiftData</p>
                         <a class="smaller" href="https://statshot.joecardenas.dev/">Landing Page</a>
                     </div>
+                    <div class="sizeToFit">
+                        <img src="../img/statshot.png" alt="" class="squircle">
+                    </div>
                 </div>
-                <img src="../img/statshot.png" alt="" class="height-25 mobile-height-50 square squircl contain">
             </div>
         </div>
 
-        <div>
-            <div class="hStack align-center mobile-vStack xp-15 mobile-xp-9 gap-2">
-                <div class="vStack flex-1 align-self-stretch">
-                    <h2>6502 Breadboard Computer</h2>
+        <div class="slash white">
+            <div>
+                <h2>6502 Breadboard Computer</h2>
+                <div class="projectContainer content-width">
                     <div class="box gray vStack flex-1">
                         <p>This 6502-based computer is based on <a class="smaller noMono" href="https://www.youtube.com/@BenEater">Ben Eater</a>'s design. Because it sits right between the low-level hardware I built in my 8-bit CPU project and the high-level software I generally deal with, this project was simultaneously capable enough to teach me real assembly programming and yet simple enough for a beginner to understand. I extended Ben Eater's design with a PS/2 keyboard interface and a simple text editing program.</p>
                         <Spacer class="mobile-height-4"></Spacer>
@@ -71,15 +73,17 @@
                         <p>This computer uses WDC 65C-Series ICs and 6502 Assembly</p>
                         <a class="smaller" href="https://github.com/swiftcoderjoe/6502-code">Source Code</a>
                     </div>
+                    <div class="sizeToFit">
+                        <img src="../img/6502computer.png" alt="" class="squircle">
+                    </div>
                 </div>
-                <img src="../img/6502computer.png" alt="" class="height-25 mobile-height-50 square squircle">
             </div>
         </div>
 
         <div class="slash">
-            <div class="hStack align-center mobile-vStack xp-15 mobile-xp-9 gap-2">
-                <div class="vStack flex-1 align-self-stretch">
-                    <h2>Discord Imitator Project</h2>
+            <div>
+                <h2>Discord Imitator Project</h2>
+                <div class="projectContainer content-width">
                     <div class="box vStack flex-1">
                         <p>The Imitator Project created a Discord bot that would imitate one of my good friends. It queries Anthropic Claude with a prompt and contextual conversation data to get a response to send to the chatroom. I updated and extended DiscordKit, created a new Anthropic Swift library, created a new ImitatorAI Swift library, and deployed a custom implementation of those libraries onto my personal server.</p>
                         <Spacer class="mobile-height-4"></Spacer>
@@ -91,15 +95,17 @@
                             <a class="smaller" href="https://github.com/SwiftCoderJoe/ImitatorAI">ImitatorAI</a>
                         </div>
                     </div>
+                    <div class="sizeToFit">
+                        <img src="../img/aiden.png" alt="" class="squircle">
+                    </div>
                 </div>
-                <img src="../img/aiden.png" alt="" class="height-25 mobile-height-50 square squircle">
             </div>
         </div>
 
-        <div>
-            <div class="hStack align-center mobile-vStack xp-15 mobile-xp-9 gap-2">
-                <div class="vStack flex-1 align-self-stretch">
-                    <h2>8-Bit Breadboard CPU</h2>
+        <div class="slash white">
+            <div>
+                <h2>8-Bit Breadboard CPU</h2>
+                <div class="projectContainer content-width">
                     <div class="box gray vStack flex-1">
                         <p>Built over the span of about 2 years, this 8-Bit breadboard CPU is based on <a class="smaller noMono" href="https://www.youtube.com/@BenEater">Ben Eater</a>'s design and tutorials. This project has given me a deeper understanding of computer architectures and how they work on an extremely low level. Though it isn't very powerful, it is a great low-level representation of real computer architecture and microcode.</p>
                         <Spacer class="mobile-height-4"></Spacer>
@@ -110,15 +116,17 @@
                             <a class="smaller" href="https://www.youtube.com/@BenEater">Ben Eater</a>
                         </div>
                     </div>
+                    <div class="sizeToFit">
+                        <img src="../img/8bitcpu.jpg" alt="The 8-Bit CPU" class="squircle">
+                    </div>
                 </div>
-                <img src="../img/8bitcpu.jpg" alt="The 8-Bit CPU" class="height-25 mobile-height-50 square squircle">
-            </div>  
+            </div>
         </div>
         
         <div class="slash">
             <div class="vStack flex-1 align-self-stretch">
                 <h2>More Projects</h2>
-                <div class="grid-2-wide mobile-vStack gap-2 xp-15">
+                <div class="grid-2-wide mobile-vStack gap-2 content-width">
                     <div class="box vStack flex-1 divLink" onclick="openModal('memeinatorDialog')">
                         <h3>Memeinator</h3>
                         <p class="truncated-1">Memeinator is an iOS app that allows you to easily change regular text into meme text, currently available on the App Store for free. It includes complex, layered text transformations and a keyboard extension. Memeinator is monetized with In-App-Purchases using StoreKit 2. Memeinator's source is robust and well-documented, and open-source.</p>
@@ -161,7 +169,7 @@
 
         <footer>
             <div>
-                <h2>JC</h2>
+                <h2><span class="colorUnderline">JC</span></h2>
             </div>
             <div>
                 <a href="../">Home</a>
