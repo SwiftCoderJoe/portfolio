@@ -46,6 +46,7 @@ div.project > div {
 div.imageCaption {
     display: flex;
     gap: 2vw;
+    align-items: center;
 }
 
 div.imageCaption > p {
