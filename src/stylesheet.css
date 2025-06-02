@@ -245,8 +245,6 @@ div.projectScrollContainer.slideTo2 > div:first-child {
 
         display: grid;
         grid: 1fr 40vw / 1fr;
-
-        box-shadow: -10px 10px black;
     }
 
     div.project > img {
